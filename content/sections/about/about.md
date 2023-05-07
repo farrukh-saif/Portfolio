@@ -3,12 +3,6 @@ imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
 imageAlt: "About Gatsby Theme Portfolio Minimal"
 ---
 
-Portfolio Minimal is a Gatsby Theme that creates outstanding one-pages portfolio within minutes!
+I'm Syed Farrukh Saif, a highly motivated and versatile 3rd-year computer engineering student with a passion for staying at the forefront of cutting-edge technologies. With an AGI-like mindset, I possess the ability to quickly learn and adapt to new technologies, enabling me to solve diverse problems with ease.
 
-It has predefined sections for your bio, skills, projects, and contact details. If you are a writer on Medium, you can integrate your latest articles in a distinct section as well. While building the theme, I tried to keep the setup as simple as possible while keeping everything configurable if you like to.
-
-Using theme composition, you can easily customize the CSS theme to your own preferences - e.g. change colors, fonts, etc.
-
-Last but not least, it has some cool features you can opt-in to: Dark Mode, Splash Screen, Cookie Banner, and more to find out :)
-
-Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Charles Deluvio</u></a> on Unsplash
+Whether it's web development, game development, app development, or any other domain, I thrive on embracing challenges and pushing the boundaries of what's possible. Let's connect and embark on an exciting journey of innovation, problem-solving, and limitless potential together!
