@@ -26,7 +26,7 @@ export default function Projects() {
                   {project.title}
                 </span>
                 <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
-                  {project.year}
+                  {project.startDate} - {project.endDate}
                 </span>
               </div>
               <p className="prose prose-neutral dark:prose-invert pt-3">
