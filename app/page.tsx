@@ -17,52 +17,38 @@ export default function Page() {
       </a>
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Hey there, wanderer! 👋
+      Hey there! I'm Farrukh 👋
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS for optimal performance.
+          Soon to start my master's in {" "}
+          <a href="https://uwaterloo.ca/systems-design-engineering/" target="_blank">
+          Systems Design Engineering
+          </a> 
+          {" "}(Specialization: AI) at the{" "}
+          <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, Canada.
         </p>
         <p>
-          Nextfolio includes all the essentials for a stunning portfolio: SEO,
-          MDX support, RSS, Atom, & JSON feeds, analytics, tweet & YouTube
-          embeds, KaTeX integration, and{" "}
-          <a
-            target="_blank"
-            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
-          >
-            more
-          </a>
-          .
+          I recently graduated in Computer Engineering from {" "}
+          <a href="https://metu.edu.tr/" target="_blank">Middle East Technical University</a>, Turkey, 
+          and I'm all about making data work smarter, not harder. Data's everywhere—we're practically drowning in it—and I believe 
+          it's all about finding the signal in the noise to unlock real value.
         </p>
         <p>
-          Nextfolio is{" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
-          </a>{" "}
-          and fully customizable, making it easy to add more features.
+          My experience? I've built data collection pipelines, led a trash classification project with object detection, 
+          and even created a chatbot website powered by a large language model. One of my favorite projects was publishing a  {" "}
+          <a href="https://github.com/farrukh-saif/Image-Annotation-Tool" target="_blank">fully hackable data annotation website</a> 
+          {" "} and a {" "}
+          <a href="https://github.com/farrukh-saif/Admin-Panel" target="_blank">slick admin panel</a> to go with it.
         </p>
         <p>
-          <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
-          >
-            Deploy
-          </a>{" "}
-          your Nextfolio site with Vercel in minutes and follow the set up
-          instructions in the{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
-        </p>
-        <p>
-          Built and maintained by{" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            Sirius
-          </a>
-          .
+          Whether it's crafting solutions from scratch or diving deep into machine learning, I'm driven by curiosity 
+          and a relentless urge to turn raw data into actionable insights. If you're into that, stick around—there's more to explore.
         </p>
       </div>
+
+
     </section>
   );
 }
