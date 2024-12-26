@@ -5,7 +5,8 @@ import { metaData } from "../config";
 const navItems = {
   "/blog": { name: "Blog" },
   "/projects": { name: "Projects" },
-  "/photos": { name: "Photos" },
+  "/experience": { name: "Experience" },
+  // "/photos": { name: "Photos" },
 };
 
 export function Navbar() {
@@ -27,6 +28,12 @@ export function Navbar() {
               {name}
             </Link>
           ))}
+          <a
+            href="mailto:syedfarrukhsaif@gmail.com"
+            className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
+          >
+            Contact Me
+          </a>
           <ThemeSwitch />
         </div>
       </div>
