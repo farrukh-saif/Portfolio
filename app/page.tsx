@@ -37,10 +37,7 @@ export default function Page() {
         </p>
         <p>
           My experience? I've built data collection pipelines, led a trash classification project with object detection, 
-          and even created a chatbot website powered by a large language model. One of my favorite projects was publishing a  {" "}
-          <a href="https://github.com/farrukh-saif/Image-Annotation-Tool" target="_blank">fully hackable data annotation website</a> 
-          {" "} and a {" "}
-          <a href="https://github.com/farrukh-saif/Admin-Panel" target="_blank">slick admin panel</a> to go with it.
+          and even created a chatbot website powered by a large language model.
         </p>
         <p>
           Whether it's crafting solutions from scratch or diving deep into machine learning, I'm driven by curiosity 

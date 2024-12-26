@@ -12,7 +12,7 @@ import { metaData } from "./config";
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
   title: {
-    default: metaData.title,
+    default: metaData.websiteTitle,
     template: `%s | ${metaData.title}`,
   },
   description: metaData.description,
