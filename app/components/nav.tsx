@@ -32,7 +32,8 @@ export function Navbar() {
             href="mailto:syedfarrukhsaif@gmail.com"
             className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
           >
-            Contact Me
+            <span className="hidden sm:inline">Contact Me</span>
+            <span className="inline sm:hidden">Contact</span>
           </a>
           <ThemeSwitch />
         </div>
