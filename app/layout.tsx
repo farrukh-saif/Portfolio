@@ -73,6 +73,20 @@ export default function RootLayout({
           href="/feed.json"
           title="JSON Feed"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-157LJWK2V4"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-157LJWK2V4');
+            `,
+          }}
+        ></script>
       </head>
       <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
         <ThemeProvider
