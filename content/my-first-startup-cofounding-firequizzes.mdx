@@ -1,0 +1,302 @@
+---
+title: "My First Startup: Cofounding FireQuizzes"
+publishedAt: "2025-01-14"
+summary: "The journey of creating and launching FireQuizzes, a startup focused on engaging content and quizzes."
+tags: ["Startup", "Entrepreneurship", "Quizzes", "AI"]
+---
+
+# **Backstory:**
+
+When I was 17, I used to create games in Unity. I created this simple Asteroid-type game, embedded it with HTML, and hosted it using Google Cloud on an App Engine. I ran an ad campaign with Facebook ads, and the site got 400 unique visits. Back then, this was enough to make me happy, and as uni approached, I left it where it was.
+
+Now at 21, after completing a Computer Engineering degree and having worked with a startup trying to get their brand off the ground, I will complete the vision that I set out to do.
+
+**The vision?** Creating a brand.
+
+**What is a brand?** A brand is an identity.
+
+Marketing and product - to me, these are the two crucial components of a business. There's the product, the value provider. This is the easier of the two since, being a software engineer, you're used to creating and building systems.
+
+But the world is complex, and people are busy - they're not really out there looking for your specific product. You have to somehow communicate what value-providing *thing* you have to people. That’s where marketing comes in, and it’s a whole different ballgame from the software world I know.
+
+## **So Why Now?**
+
+One day, a friend—also a software engineer—sent me screenshots of several Instagram accounts he’d created, each targeting different niches like travel and lifestyle.
+
+This sparks up the **collaboration of the century**. Two friends working together to create a startup.
+
+<ImageGrid
+  columns={2}
+  images={[
+    { src: "/blogs/firequizzes/steve.jpg", alt: "Collaboration" },
+    { src: "/blogs/firequizzes/images.jpg", alt: "Startup Inspiration" },
+    { src: "/blogs/firequizzes/Steven-Jobs-Apple-I-Stephen-Wozniak-circuit-1976.webp", alt: "Startup Inspiration" },
+    { src: "/blogs/firequizzes/a260d330-a31e-4157-85fe-cfae5761bf45.png", alt: "Startup Inspiration" },
+  ]}
+/>
+
+The world saw Jobs and Wozniak, Larry and Sergey. Now it’s time for [Tarik](http://tariktrokic.com) and Farrukh.
+
+**LET’S GOOOO WE’RE ESCAPING THE MATRIX WITH THIS ONE!**
+
+
+# **…But Wait, What Should We Make?**
+
+We’ve watched the world become addicted to short-form content. Back when I was a kid, we used to binge long YouTube videos. Now, it’s all about quick hits—Reels, TikToks, Shorts.
+
+So we thought:
+
+**Why not create multiple Instagram pages as the product itself?**
+
+Engage people with interesting content, build an audience, and cash in through brand deals and affiliate marketing.
+
+The plan? Post reels and normal posts, all generated using AI. Let the machines do the heavy lifting—because AI is the future, right? We’ll automate content creation and ride the wave of AI.
+
+We could already picture the billions rolling in. Sending each other reels of penthouses in Colombia and Thailand, saying: **“This gon’ be us soon! 😤”**
+
+We started looking for different tools to help us achieve the task of automating AI content creation.
+
+After experimenting with several tools including:
+
+- Opus Pro
+- Invideo
+- Elevenlabs
+
+After some trial and error, we settled on **CapCut** for its simplicity and effectiveness.
+
+We pumped out reels—some hilarious, but not for the right reasons. AI-generated humor? Yeah… not quite there yet. Some posts just flopped.
+
+Turns out, AI isn’t great at being funny or engaging without human input. And manual intervention? It slows everything down.
+
+If we’re going to put in more effort per piece of content, we need a bigger payoff.
+
+## The Pivot
+
+**We need to make products that generate revenue directly—** using short-form content as a marketing tool, not the product itself.
+
+Enter FootyQuizzes: 
+
+This one came straight out of the graveyard of dead startup ideas buried in our group chat. The premise? We don’t need to reinvent the wheel—we just need to offer a better solution to an already solved problem. In this case, it’s football quizzes, but with a cleaner UI and less ad-spamming. 😄
+
+Then we thought: Why not make it more scalable?
+
+**Reusable software.**
+
+Let’s create a template that’s easy to plug into and launch new quizzes quickly. We can generate quizzes in JSON format—maybe even AI-generated—and have them live in minutes. We could scale this up and create several apps this way.
+
+But then… reality check.
+
+**Getting apps live on the Google Play and App Store?** A hassle. And honestly, who’s going to bother downloading a new app for a quiz?
+
+**Solution?** We’ll build a website instead. Quizzes will be instantly accessible, and we can keep the focus on engaging content rather than app store approval.
+<figure>
+  <img src="/blogs/firequizzes/unnamed.jpg" alt="Plan so far" width={640} height={500} style={{ borderRadius: '8px' }}/>
+  <figcaption style={{ textAlign: 'center' }}>The Plan So Far</figcaption>
+</figure>
+
+
+# **From Daydreams to Blueprints: Time to Build.**
+
+Name? Well we’ll be making some fire quizzes. What could we possibly name our brand?
+
+## Domain:
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+    <img 
+      src="/blogs/firequizzes/godaddy.jpeg" 
+      alt="godaddy.jpeg" 
+      width={400} 
+      style={{ borderRadius: '8px' }}
+    />
+</div>
+
+Oh, that was easy.
+
+## **Proof of concept: Let’s Create a Reel**
+
+How about a reel for a quiz about the [roman empire](https://knowyourmeme.com/memes/how-often-do-you-think-about-the-roman-empire).
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+    <video height="300" controls style={{ borderRadius: '8px' }}>
+        <source src="/blogs/firequizzes/reel.mov" type="video/mp4" />
+    </video>
+</div>
+
+## **Design Inspiration for the Webapp.**
+
+A few minutes of Googling brought us these design gems.
+
+<ImageGrid 
+  columns={2}
+  images={[
+    { src: "/blogs/firequizzes/design_inspo_1.jpeg", alt: "design_inspo_1" },
+    { src: "/blogs/firequizzes/design_inspo_2.jpeg", alt: "design_inspo_2" },
+    { src: "/blogs/firequizzes/design_inspo_3.jpeg", alt: "design_inspo_3" },
+    { src: "/blogs/firequizzes/design_inspo_4.jpeg", alt: "design_inspo_4" }
+  ]}
+/>
+
+## **Website**
+
+We kicked off by creating a GitHub repo and pushing our code to it. With my cofounder’s extensive experience building websites, we quickly aligned and dove into making something robust.
+
+We added a textbox to collect emails
+
+
+<figure>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img 
+        src="/blogs/firequizzes/Mailchimp.jpg" 
+        alt="Mailchimp: To Store The Emails" 
+        width={640} 
+        height={500}
+        style={{ borderRadius: '8px' }}
+        />
+    </div>
+  <figcaption style={{ textAlign: 'center' }}>Mailchimp: To Store The Emails</figcaption>
+</figure>
+
+To ensure better feedback, we displayed the correct answers immediately after the user selected their response. This tightens the feedback loop and improves engagement since users can immediately learn from their mistakes.
+
+<img 
+  src="/blogs/firequizzes/feedback.jpeg" 
+  alt="feedback.jpeg" 
+  width={640} 
+  height={500}
+  style={{ borderRadius: '8px' }}
+/>
+
+We also integrated dynamic messages tailored to the user's score, making the experience more personalized.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<img 
+  src="/blogs/firequizzes/Screenshot_2025-01-13_at_8.56.07_PM.png" 
+  alt="Screenshot 2025-01-13 at 8.56.07 PM" 
+  width={640} 
+  height={500}
+  style={{ borderRadius: '8px' }}
+/>
+</div>
+
+All this was powered by Next.js, hosted on Vercel, and backed by efficient DNS setup for smooth domain management.
+
+The site’s live, and it's all set for the next stage!
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+    <img 
+        src="/blogs/firequizzes/Screenshot_2025-01-13_at_7.54.48_PM.png" 
+        alt="Screenshot 2025-01-13 at 7.54.48 PM" 
+        width={640} 
+        height={500}
+        style={{ borderRadius: '8px' }}
+    />
+</div>
+
+## Sample reel for the website
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+    <video height="300" controls style={{ borderRadius: '8px' }}>
+        <source src="/blogs/firequizzes/reel_1.mov" type="video/mp4" />
+    </video>
+</div>
+
+## Logo with **Canva:**
+
+Early Drafts:
+
+<ImageGrid 
+  columns={2}
+  images={[
+    { src: "/blogs/firequizzes/logo_1.jpeg", alt: "logo_1" },
+    { src: "/blogs/firequizzes/logo_2.jpeg", alt: "logo_2" }
+  ]}
+/>
+
+The final Logo:
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+    <img 
+    src="/blogs/firequizzes/canva.png" 
+    alt="image.png" 
+    width={600} 
+    style={{ borderRadius: '8px' }}
+    />
+</div>
+
+## **Social Media Accounts**
+
+We've set up our **Instagram** account, @firequizzes:
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+    <img 
+    src="/blogs/firequizzes/instagram.jpeg" 
+    alt="instagram.jpeg" 
+    width={150} 
+    style={{ borderRadius: '8px' }}
+    />
+</div>
+
+And our **TikTok** account, @firequizzes:
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+    <img 
+    src="/blogs/firequizzes/tiktok.jpeg" 
+    alt="tiktok.jpeg" 
+    width={150} 
+    style={{ borderRadius: '8px' }}
+    />
+</div>
+
+## Adsense:
+
+Now we need to integrate ads with the website. Being already familiar with Google Adsense as it’s popular for being Google’s highest earning revenue stream, we thought it to be a good enough choice. Google Adsense advertises it as taking 2-4 weeks to review sites.
+
+<img 
+  src="/blogs/firequizzes/adsense.jpeg" 
+  alt="adsense.jpeg" 
+  width={640} 
+  height={500}
+  style={{ borderRadius: '8px' }}
+/>
+
+After waiting for what felt like an eternity (1 full month), Google finally accepted our site for AdSense!
+
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<img 
+  src="/blogs/firequizzes/a0885758-9895-4f6c-81bb-fc767d0c1769.png" 
+  alt="Screenshot 2025-01-13 at 3.57.21 PM" 
+  width={300} 
+  height="auto"
+  style={{ borderRadius: '8px' }}
+/>
+</div>
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<video width="450" controls style={{ borderRadius: '8px' }}>
+    <source src="/blogs/firequizzes/were_approved_clip-1.mov" type="video/mp4" />
+</video>
+</div>
+
+## Google Analytics:
+
+In order to test Google Analytics without actually having to launch our product because we want everything to be ready, I first tested it on this very website.
+
+
+<figure>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img 
+            src="/blogs/firequizzes/analytics.png" 
+            alt="Dashboard" 
+            width="500" 
+            height="auto"
+            style={{ borderRadius: '8px' }}
+        />
+    </div>
+  <figcaption style={{ textAlign: 'center' }}>Google Analytics' Dashboard</figcaption>
+</figure>
+
+
+
+Great, seems to be working. All we had to do then was to add a tag to our website’s metadata and we were ready for launch!
+
+# Conclusion
+
+The journey from idea to execution has been a whirlwind, but we’re finally here. We’ve built a solid foundation with a website, engaging content, and a brand identity that feels right.
+
+Now we’re ready to take on the world. If you’re reading this, [Firequizzes is live](http://www.firequizzes.com) and ready for you to dive in. Explore, have fun, and **ignite your curiosity**—start quizzing now!
