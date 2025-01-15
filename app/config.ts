@@ -1,5 +1,5 @@
 export const metaData = {
-  baseUrl: "https://nextfolio-template.vercel.app/",
+  baseUrl: "https://syedfarrukhsaif.com/",
   websiteTitle: "Farrukh Saif - Your Next Hire",
   title: "Farrukh Saif",
   name: "Farrukh Saif",
