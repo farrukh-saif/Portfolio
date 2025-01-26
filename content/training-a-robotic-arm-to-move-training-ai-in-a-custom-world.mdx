@@ -241,7 +241,6 @@ The agent is your car. You (or the AI) can speed up, brake, or steer. The enviro
 **Now in general:**
 
 The agent interacts with the environment by taking actions which in turn might affect the environment and then it receives observations of the affected state
-****
 
 <figure>
   <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -260,7 +259,7 @@ The agent interacts with the environment by taking actions which in turn might a
 
 Ideally, you might want to let the robot see the environment in its entirety—raw pixels, full state, everything. But in practice, it’s much more efficient to extract and provide only the most important features. For example, you *could* teach an AI to play Pong by feeding it thousands of pixels and letting it figure out what to do. But here’s the catch: not only would the AI be learning how to play Pong, it’d also be learning how to *see*. And that’s a lot of extra work, making the process painfully slow.
 
-Sure, this kind of end-to-end learning is possible, but to keep things simple, we’re going to give our agent ****hand-crafted features—specific pieces of information that we think will help it navigate the environment more effectively.
+Sure, this kind of end-to-end learning is possible, but to keep things simple, we’re going to give our agent hand-crafted features—specific pieces of information that we think will help it navigate the environment more effectively.
 
 Here’s what our observation space looks like:
 
