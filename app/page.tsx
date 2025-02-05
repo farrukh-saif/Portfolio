@@ -3,7 +3,6 @@ import { useState } from 'react';
 import AudioControls from "./components/audio-controls";
 import Image from "next/image";
 import { socialLinks } from "./config";
-import {RiResetLeftLine} from "react-icons/ri"
 
 export default function Page() {
   const [activeAudioName, setActiveAudioName] = useState<string | null>(null);
