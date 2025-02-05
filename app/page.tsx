@@ -34,10 +34,23 @@ export default function Page() {
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
-        <p>Cat ipsum dolor sit amet, hunt anything that moves. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food.</p>
+        <p>
+          Soon to start my master's in {" "}
+          <a href="https://uwaterloo.ca/systems-design-engineering/" target="_blank">
+          Systems Design Engineering
+          </a> 
+          {" "}(Specialization: AI) at the{" "}
+          <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, Canada.
+        </p>
+        <p>
+          I recently graduated in Computer Engineering from {" "}
+          <a href="https://metu.edu.tr/" target="_blank">Middle East Technical University</a>, Turkey, 
+          and I'm all about making data work smarter, not harder. Data's everywhere—we're practically drowning in it—and I believe 
+          it's all about finding the signal in the noise to unlock real value.
+        </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 mt-6">
         <h1 className="text-2xl font-medium tracking-tight">
           Who Am I?
         </h1>
@@ -83,26 +96,8 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Soon to start my master's in {" "}
-          <a href="https://uwaterloo.ca/systems-design-engineering/" target="_blank">
-          Systems Design Engineering
-          </a> 
-          {" "}(Specialization: AI) at the{" "}
-          <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, Canada.
-        </p>
-        <p>
-          I recently graduated in Computer Engineering from {" "}
-          <a href="https://metu.edu.tr/" target="_blank">Middle East Technical University</a>, Turkey, 
-          and I'm all about making data work smarter, not harder. Data's everywhere—we're practically drowning in it—and I believe 
-          it's all about finding the signal in the noise to unlock real value.
-        </p>
-        <p>
           My experience? I've built data collection pipelines, led a trash classification project with object detection, 
           and even created a chatbot website powered by a large language model.
-        </p>
-        <p>
-          Whether it's crafting solutions from scratch or diving deep into machine learning, I'm driven by curiosity 
-          and a relentless urge to turn raw data into actionable insights. If you're into that, stick around—there's more to explore.
         </p>
       </div>
 
