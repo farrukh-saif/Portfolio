@@ -21,7 +21,7 @@ export default function Page() {
       </h1>
 
       <audio controls>
-        <source src="home-page.mp4" type="audio/mpeg" />
+        <source src="home-page.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 
