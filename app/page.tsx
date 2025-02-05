@@ -26,14 +26,16 @@ export default function Page() {
       </a>
 
       <div className="prose prose-neutral dark:prose-invert">
-
-      <p>I'm building out the narration feature and yes I'm testing on production. it's my website boi.</p>
-
+      <p>⚠️ I'm building out the narration feature and yes I'm testing on production. It's my website boi . 🚧 </p>
       </div>
+
+      <h1 className="text-2xl font-medium tracking-tight">
+          Hey there! I'm Farrukh 👋
+      </h1>
 
       <div className="flex items-center gap-3 mb-8">
         <h1 className="text-2xl font-medium tracking-tight">
-          Hey there! I'm Farrukh 👋
+          Who Am I?
         </h1>
         <AudioControls 
           audioName="test.mp3"
@@ -51,7 +53,7 @@ export default function Page() {
 
       <div className="flex items-center gap-3 mb-8">
         <h1 className="text-2xl font-medium tracking-tight">
-          How do I work?
+          How Do I Work?
         </h1>
         <AudioControls 
           audioName="home-page.mp3"
@@ -69,7 +71,7 @@ export default function Page() {
 
       <div className="flex items-center gap-3 mb-8">
         <h1 className="text-2xl font-medium tracking-tight">
-          Let's get started
+          Let's Build Cool Shit
         </h1>
         <AudioControls 
           audioName="sora.mp3"
