@@ -33,7 +33,11 @@ export default function Page() {
           Hey there! I'm Farrukh 👋
       </h1>
 
-      <div className="flex items-center gap-3 mb-8">
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>Cat ipsum dolor sit amet, hunt anything that moves. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food.</p>
+      </div>
+
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8">
         <h1 className="text-2xl font-medium tracking-tight">
           Who Am I?
         </h1>
@@ -44,14 +48,12 @@ export default function Page() {
           resetAllExcept={handleResetOthers}
         />
       </div>
+
       <div className="prose prose-neutral dark:prose-invert">
-
-      <p>Lorem Ipsum Boi</p>
-
+        <p>Cat ipsum dolor sit amet, hunt anything that moves. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food.</p>
       </div>
-      
 
-      <div className="flex items-center gap-3 mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8">
         <h1 className="text-2xl font-medium tracking-tight">
           How Do I Work?
         </h1>
@@ -64,12 +66,10 @@ export default function Page() {
       </div>
 
       <div className="prose prose-neutral dark:prose-invert">
-
-      <p>Lorem Ipsum Boi</p>
-
+        <p>Cat ipsum dolor sit amet, hunt anything that moves. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food.</p>
       </div>
 
-      <div className="flex items-center gap-3 mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8">
         <h1 className="text-2xl font-medium tracking-tight">
           Let's Build Cool Shit
         </h1>
@@ -79,12 +79,6 @@ export default function Page() {
           onPlay={setActiveAudioName}
           resetAllExcept={handleResetOthers}
         />
-      </div>
-
-      <div className="prose prose-neutral dark:prose-invert">
-
-      <p>Lorem Ipsum Boi</p>
-
       </div>
 
       <div className="prose prose-neutral dark:prose-invert">
