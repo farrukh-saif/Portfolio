@@ -1,7 +1,17 @@
+'use client';
+import { useState } from 'react';
+import AudioControls from "./components/audio-controls";
 import Image from "next/image";
 import { socialLinks } from "./config";
+import {RiResetLeftLine} from "react-icons/ri"
 
 export default function Page() {
+  const [activeAudioName, setActiveAudioName] = useState<string | null>(null);
+
+  const handleResetOthers = (currentAudio: string) => {
+    setActiveAudioName(currentAudio);
+  };
+
   return (
     <section>
       <a href={socialLinks.linkedin} target="_blank">
@@ -16,14 +26,65 @@ export default function Page() {
         />
       </a>
 
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">
-      Hey there! I'm Farrukh 👋
-      </h1>
+      <div className="prose prose-neutral dark:prose-invert">
 
-      <audio controls>
-        <source src="home-page.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+      <p>I'm building out the narration feature and yes I'm testing on production. it's my website boi.</p>
+
+      </div>
+
+      <div className="flex items-center gap-3 mb-8">
+        <h1 className="text-2xl font-medium tracking-tight">
+          Hey there! I'm Farrukh 👋
+        </h1>
+        <AudioControls 
+          audioName="test.mp3"
+          activeAudioName={activeAudioName}
+          onPlay={setActiveAudioName}
+          resetAllExcept={handleResetOthers}
+        />
+      </div>
+      <div className="prose prose-neutral dark:prose-invert">
+
+      <p>Lorem Ipsum Boi</p>
+
+      </div>
+      
+
+      <div className="flex items-center gap-3 mb-8">
+        <h1 className="text-2xl font-medium tracking-tight">
+          How do I work?
+        </h1>
+        <AudioControls 
+          audioName="home-page.mp3"
+          activeAudioName={activeAudioName}
+          onPlay={setActiveAudioName}
+          resetAllExcept={handleResetOthers}
+        />
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+
+      <p>Lorem Ipsum Boi</p>
+
+      </div>
+
+      <div className="flex items-center gap-3 mb-8">
+        <h1 className="text-2xl font-medium tracking-tight">
+          Let's get started
+        </h1>
+        <AudioControls 
+          audioName="sora.mp3"
+          activeAudioName={activeAudioName}
+          onPlay={setActiveAudioName}
+          resetAllExcept={handleResetOthers}
+        />
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+
+      <p>Lorem Ipsum Boi</p>
+
+      </div>
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
