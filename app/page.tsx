@@ -3,16 +3,56 @@ import { useState } from 'react';
 import AudioControls from "./components/audio-controls";
 import Image from "next/image";
 import { socialLinks } from "./config";
+import { MyDialog } from './components/project-dialog';
 
 export default function Page() {
   const [activeAudioName, setActiveAudioName] = useState<string | null>(null);
-
+  let [isOpen, setIsOpen] = useState(true)
   const handleResetOthers = (currentAudio: string) => {
     setActiveAudioName(currentAudio);
   };
 
   return (
     <section>
+
+{/*       
+    <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
+      <div className="fixed inset-0 bg-black/50 backdrop-blur-md dark:bg-white/10" />
+      <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
+        <DialogPanel className="max-w-2xl space-y-4 border border-neutral-200 bg-white p-6 rounded-2xl shadow-2xl dark:border-neutral-800 dark:bg-neutral-900">
+          <div className="space-y-4">
+            <DialogTitle className="text-xl font-bold text-neutral-900 text-center dark:text-neutral-100">
+              FireQuizzes Project
+            </DialogTitle>
+            
+            <div className="group relative overflow-hidden rounded-lg transition-all">
+              <img 
+                className="w-full h-auto grayscale-[0.5] group-hover:grayscale-0 transition-all duration-300"
+                src="firequizzes.png" 
+                alt="Project preview" 
+              />
+              <div className="absolute inset-0 bg-black/40 transition-all group-hover:bg-black/20 dark:bg-neutral-900/20 dark:group-hover:bg-neutral-900/10" />
+            </div>
+
+            <div className="text-center">
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener"
+                className="inline-block px-6 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-100 rounded-md transition-colors font-medium text-sm shadow-md dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-200"
+              >
+                Explore Live Demo →
+              </a>
+            </div>
+
+            <Description className="text-neutral-600 text-center text-sm dark:text-neutral-400">
+              Interactive quiz platform built with modern web technologies
+            </Description>
+          </div>
+        </DialogPanel>
+      </div>
+    </Dialog> */}
+
       <a href={socialLinks.linkedin} target="_blank">
         <Image
           src="/face-pic.jpg"
@@ -89,13 +129,75 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <ul>
-          <li><strong>Object Detection for Trash Classification</strong> — fine-tuned a model that helps sort waste into recycling categories.</li>
-          <li><strong>Robotic Arm AI Agent</strong> — trained an AI to operate a robotic arm in a virtual environment.</li>
-          <li><strong>Arduino Musical Instrument</strong> — hacked together a DIY instrument for fun.</li>
-          <li><strong>Orbit Ball</strong> — minimalist mobile game on the Play Store.</li>
-          <li><strong>AR Education Apps</strong> — published apps for iOS and Android.</li>
-          <li><strong>FireQuizzes</strong> — a quiz web app for curious minds.</li>
-          <li><strong>Binary Adder in Minecraft</strong> — yep, it works in-game.</li>
+          <li>
+            <MyDialog 
+              src="home-page/object_detection.jpg" 
+              desc="Fine-tuned model for waste sorting"
+              dimensions="h-[400px]"
+            >
+              <strong>Object Detection for Trash Classification</strong>
+            </MyDialog> — fine-tuned a model that helps sort waste into recycling categories
+          </li>
+          <li>
+            <MyDialog 
+              src="home-page/admin-panel.png" // Add your image path here
+              desc="Data annotation platform with admin panel"
+              buttonText="Explore Live Demo →"
+            >
+              <strong>Data Annotation Website & Admin Panel</strong>
+            </MyDialog> — made it for a data collection campaign I ran to gather user preferences
+          </li>
+          <li>
+          <MyDialog 
+              src="home-page/ai-playing.gif" 
+              link="https://syedfarrukhsaif.com/blog/training-a-robotic-arm-to-move-training-ai-in-a-custom-world" 
+              desc="Trained an AI to operate a robotic arm in a virtual environment"
+              buttonText="Read Blog"
+            >
+              <strong>Robotic Arm AI Agent</strong>
+            </MyDialog> — trained an AI to operate a robotic arm in a virtual environment</li>
+          <li>
+            <MyDialog 
+              src="home-page/brainsteam.webp" 
+              link="https://apps.apple.com/us/app/brainsteam-flashcards/id1486175844" 
+              desc="I made 2 apps like this, published on both App Store and the Play Store"
+              buttonText="Explore on App Store"
+              dimensions="h-[400px] w-auto"
+            >
+              <strong>AR Education Apps</strong>
+            </MyDialog> — published apps for iOS and Android
+          </li>
+          <li>
+            <MyDialog 
+              src="home-page/firequizzes.png" 
+              link="https://firequizzes.com" 
+              desc="Quiz platform for curious minds"
+              buttonText="Explore Live Demo →"
+              dimensions="h-[330px] w-auto"
+            >
+              <strong>FireQuizzes</strong>
+            </MyDialog> — a quiz web app for curious minds
+          </li>
+          <li>
+            <MyDialog 
+              src="home-page/orbit-ball.webp" 
+              link="https://play.google.com/store/apps/details?id=com.DefaultCompany.OrbitBall&hl=en_CA" 
+              desc="Minimalist mobile game on the Play Stores"
+              buttonText="Download from Google Play"
+              dimensions="w-[180px] h-auto"
+            >
+              <strong>Orbit Ball</strong>
+            </MyDialog> — minimalist mobile game on the Play Store
+          </li>
+          <li>
+            <MyDialog 
+              src="arduino-project.jpg" 
+              desc="DIY musical instrument made with Arduino"
+            >
+              <strong>Arduino Musical Instrument</strong>
+            </MyDialog> — hacked together a DIY instrument for fun
+          </li>
+          <li><strong>Binary Adder in Minecraft</strong> — yep, it works in-game</li>
         </ul>
       </div>
 
