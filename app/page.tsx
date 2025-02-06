@@ -57,7 +57,7 @@ export default function Page() {
           Tools of the trade
         </h1>
         <AudioControls 
-          audioName="tools.mp3"
+          audioName="tools-new.mp3"
           activeAudioName={activeAudioName}
           onPlay={setActiveAudioName}
           resetAllExcept={handleResetOthers}
