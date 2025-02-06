@@ -53,11 +53,18 @@ export default function Page() {
       </div>
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 mt-6">
-          <h1 className="text-2xl font-medium tracking-tight">
-            Tools of the trade
-          </h1>
-        </div>
-        <div className="prose prose-neutral dark:prose-invert">
+        <h1 className="text-2xl font-medium tracking-tight">
+          Tools of the trade
+        </h1>
+        <AudioControls 
+          audioName="tools.mp3"
+          activeAudioName={activeAudioName}
+          onPlay={setActiveAudioName}
+          resetAllExcept={handleResetOthers}
+        />
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
         <div className="flex flex-col justify-center items-center gap-3">
           <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=py,pytorch,sklearn,selenium,anaconda,unity" alt="My Skills" />
           <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=tensorflow,opencv,flutter,firebase,react,androidstudio" alt="My Skills" />
