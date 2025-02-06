@@ -29,7 +29,7 @@ export default function Page() {
       <p>⚠️ I'm building out the narration feature and yes I'm testing on production. It's my website boi I does what I wish to. 🚧 </p>
       </div> */}
 
-      <h1 className="text-2xl font-medium tracking-tight">
+      <h1 className="text-3xl font-medium tracking-tight">
         Hey there! I'm Farrukh 👋
       </h1>
 
