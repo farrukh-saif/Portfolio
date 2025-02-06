@@ -142,7 +142,8 @@ export default function Page() {
             <MyDialog 
               src="home-page/admin-panel.png" // Add your image path here
               desc="Data annotation platform with admin panel"
-              buttonText="Explore Live Demo →"
+              link="https://github.com/farrukh-saif/Admin-Panel"
+              buttonText="View Admin Panel on GitHub"
             >
               <strong>Data Annotation Website & Admin Panel</strong>
             </MyDialog> — made it for a data collection campaign I ran to gather user preferences
