@@ -25,9 +25,9 @@ export default function Page() {
         />
       </a>
 
-      {/* <div className="prose prose-neutral dark:prose-invert">
-      <p>⚠️ I'm building out the narration feature and yes I'm testing on production. It's my website boi . 🚧 </p>
-      </div> */}
+      <div className="prose prose-neutral dark:prose-invert">
+      <p>⚠️ I'm building out the narration feature and yes I'm testing on production. It's my website boi I does what I wish to. 🚧 </p>
+      </div>
 
       <h1 className="text-2xl font-medium tracking-tight">
         Hey there! I'm Farrukh 👋
