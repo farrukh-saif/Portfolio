@@ -25,14 +25,17 @@ export default function Page() {
         />
       </a>
 
-      <div className="prose prose-neutral dark:prose-invert">
+      {/* <div className="prose prose-neutral dark:prose-invert">
       <p>⚠️ I'm building out the narration feature and yes I'm testing on production. It's my website boi . 🚧 </p>
-      </div>
+      </div> */}
 
+      <h1 className="text-2xl font-medium tracking-tight">
+        Hey there! I'm Farrukh 👋
+      </h1>
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 mt-6">
         <h1 className="text-2xl font-medium tracking-tight">
-        Hey there! I'm Farrukh 👋
+          Who am I?
         </h1>
         <AudioControls 
           audioName="test.mp3"
@@ -44,24 +47,13 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Soon to start my master's in {" "}
-          <a href="https://uwaterloo.ca/systems-design-engineering/" target="_blank">
-          Systems Design Engineering
-          </a> 
-          {" "}(Specialization: AI) at the{" "}
-          <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, Canada.
-        </p>
-        <p>
-          I recently graduated in Computer Engineering from {" "}
-          <a href="https://metu.edu.tr/" target="_blank">Middle East Technical University</a>, Turkey, 
-          and I'm all about making data work smarter, not harder. Data's everywhere—we're practically drowning in it—and I believe 
-          it's all about finding the signal in the noise to unlock real value.
+          Just a regular dude who's into tech and is tryna have a fun time on Earth. Did my undergrad in <strong>Computer Engineering at ODTÜ</strong> in Turkey. Moved to <strong>Canada {Math.floor((-new Date('2024-09-06').getTime() + new Date().getTime()) / (1000 * 60 * 60 * 24 * 30))} months ago</strong>. Starting my <strong>Master’s in AI at the University of Waterloo</strong> this Spring. My experience spans <strong>machine learning, software development, and augmented reality</strong>. The type of nerd who reads research papers for fun and builds because curiosity won’t let me do otherwise.
         </p>
       </div>
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 mt-6">
         <h1 className="text-2xl font-medium tracking-tight">
-          How Do I Work?
+          Cool Shit I've Built
         </h1>
         <AudioControls 
           audioName="home-page.mp3"
@@ -72,12 +64,20 @@ export default function Page() {
       </div>
 
       <div className="prose prose-neutral dark:prose-invert">
-        <p>Cat ipsum dolor sit amet, hunt anything that moves. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food.</p>
+        <ul>
+          <li><strong>Object Detection for Trash Classification</strong> — fine-tuned a model that helps sort waste into recycling categories.</li>
+          <li><strong>Robotic Arm AI Agent</strong> — trained an AI to operate a robotic arm in a virtual environment.</li>
+          <li><strong>Arduino Musical Instrument</strong> — hacked together a DIY instrument for fun.</li>
+          <li><strong>Orbit Ball</strong> — minimalist mobile game on the Play Store.</li>
+          <li><strong>AR Education Apps</strong> — published apps for iOS and Android.</li>
+          <li><strong>FireQuizzes</strong> — a quiz web app for curious minds.</li>
+          <li><strong>Binary Adder in Minecraft</strong> — yep, it works in-game.</li>
+        </ul>
       </div>
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8">
         <h1 className="text-2xl font-medium tracking-tight">
-          Let's Build Cool Shit
+          Let's Build Cool Shit Together
         </h1>
         <AudioControls 
           audioName="sora.mp3"
@@ -89,11 +89,10 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          My experience? I've built data collection pipelines, led a trash classification project with object detection, 
-          and even created a chatbot website powered by a large language model.
+          All I’m sayin’ is: if you want some half-baked code that barely works—hire ChatGPT. But if you want someone <strong>curious, relentless, and dependable</strong> enough to turn ideas into reality, I’m your guy. {" "}
+          <a href="mailto:syedfarrukhsaif@gmail.com">Let's talk.</a>
         </p>
       </div>
-
 
     </section>
   );
