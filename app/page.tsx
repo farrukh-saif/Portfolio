@@ -50,10 +50,10 @@ export default function Page() {
           Just a regular dude who's into tech and is tryna have a fun time on Earth. Did my undergrad in <strong>Computer Engineering at ODTÜ</strong> in Turkey. Moved to <strong>Canada {Math.floor((-new Date('2024-09-06').getTime() + new Date().getTime()) / (1000 * 60 * 60 * 24 * 30))} months ago</strong>. Starting my <strong>Master’s in AI at the University of Waterloo</strong> this Spring. My experience spans <strong>machine learning, software development, and augmented reality</strong>. The type of nerd who reads research papers for fun and builds because curiosity won’t let me do otherwise.
         </p>
         <div className="flex flex-wrap justify-center items-center gap-4">
-          <img className="h-11.5" src="https://skillicons.dev/icons?i=py,pytorch,sklearn,selenium,anaconda,unity" alt="My Skills" />
-          <img className="h-11.5" src="https://skillicons.dev/icons?i=tensorflow,opencv,flutter,firebase,react,androidstudio" alt="My Skills" />
-          <img className="h-11.5" src="https://skillicons.dev/icons?i=cs,docker,gcp,vscode,git,postman" alt="My Skills" />
-          <img className="h-11.5" src="https://skillicons.dev/icons?i=c,cpp,arduino,npm,pnpm,mysql" alt="My Skills" />
+          <img className="h-11.5 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=py,pytorch,sklearn,selenium,anaconda,unity" alt="My Skills" />
+          <img className="h-11.5 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=tensorflow,opencv,flutter,firebase,react,androidstudio" alt="My Skills" />
+          <img className="h-11.5 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=cs,docker,gcp,vscode,git,postman" alt="My Skills" />
+          <img className="h-11.5 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=c,cpp,arduino,npm,pnpm,mysql" alt="My Skills" />
         </div>
         <p className="text-center text-sm italic">
           These might be tools I've used extensively in the past, but believe me when I say that my tools are just that, my tools. It's the problem that matters, I'll learn whatever it takes.
