@@ -69,7 +69,7 @@ export default function Page() {
       <p>⚠️ I'm building out the narration feature and yes I'm testing on production. It's my website boi I does what I wish to. 🚧 </p>
       </div> */}
 
-      <h1 className="text-3xl font-medium tracking-tight">
+      <h1 className="sm:text-3xl text-2xl font-medium tracking-tight">
         Hey there! I'm Farrukh 👋
       </h1>
 
@@ -135,7 +135,7 @@ export default function Page() {
               desc="Fine-tuned model for waste sorting"
               dimensions="h-[400px]"
             >
-              <strong>Object Detection for Trash Classification</strong>
+              <strong>Object Detection Project</strong>
             </MyDialog> — fine-tuned a model that helps sort waste into recycling categories
           </li>
           <li>
@@ -145,7 +145,7 @@ export default function Page() {
               link="https://github.com/farrukh-saif/Admin-Panel"
               buttonText="View Admin Panel on GitHub"
             >
-              <strong>Data Annotation Website & Admin Panel</strong>
+              <strong>Data Annotation Site & Admin Panel</strong>
             </MyDialog> — made it for a data collection campaign I ran to gather user preferences
           </li>
           <li>

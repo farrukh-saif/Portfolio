@@ -37,7 +37,7 @@ export function MyDialog({
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="hover:underline underline-offset-4"
+        className="underline sm:no-underline underline-offset-4"
       >
         {children}
       </button>
