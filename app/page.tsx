@@ -190,12 +190,7 @@ export default function Page() {
             </MyDialog> — minimalist mobile game on the Play Store
           </li>
           <li>
-            <MyDialog 
-              src="arduino-project.jpg" 
-              desc="DIY musical instrument made with Arduino"
-            >
-              <strong>Arduino Musical Instrument</strong>
-            </MyDialog> — hacked together a DIY instrument for fun
+              <strong>Arduino Musical Instrument</strong> — hacked together a DIY instrument for fun
           </li>
           <li><strong>Binary Adder in Minecraft</strong> — yep, it works in-game</li>
         </ul>
