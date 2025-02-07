@@ -37,7 +37,7 @@ export function MyDialog({
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="underline sm:no-underline underline-offset-4 text-left"
+        className="text-left"
       >
         {children}
       </button>

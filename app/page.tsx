@@ -96,7 +96,7 @@ export default function Page() {
               desc="Fine-tuned model for waste sorting"
               dimensions="h-[400px]"
             >
-              <strong>Object Detection Project</strong>
+              <strong className="underline sm:no-underline underline-offset-4">Object Detection Project</strong>
             </MyDialog> — fine-tuned a model that helps sort waste into recycling categories
           </li>
           <li>
@@ -106,7 +106,7 @@ export default function Page() {
               link="https://github.com/farrukh-saif/Admin-Panel"
               buttonText="View Admin Panel on GitHub"
             >
-              <strong>Data Annotation Site & Admin Panel</strong>
+              <strong className="underline sm:no-underline underline-offset-4">Data Annotation Site & Admin Panel</strong>
             </MyDialog> — made it for a data collection campaign I ran to gather user preferences
           </li>
           <li>
@@ -116,7 +116,7 @@ export default function Page() {
               desc="Trained an AI to operate a robotic arm in a virtual environment"
               buttonText="Read Blog"
             >
-              <strong>Robotic Arm AI Agent</strong>
+              <strong className="underline sm:no-underline underline-offset-4">Robotic Arm AI Agent</strong>
             </MyDialog> — trained an AI to operate a robotic arm in a virtual environment</li>
           <li>
             <MyDialog 
@@ -126,7 +126,7 @@ export default function Page() {
               buttonText="Explore on App Store"
               dimensions="h-[400px] w-auto"
             >
-              <strong>AR Education Apps</strong>
+              <strong className="underline sm:no-underline underline-offset-4">AR Education Apps</strong>
             </MyDialog> — published apps for iOS and Android
           </li>
           <li>
@@ -137,7 +137,7 @@ export default function Page() {
               buttonText="Explore Live Demo →"
               dimensions="h-[330px] w-auto"
             >
-              <strong>FireQuizzes</strong>
+              <strong className="underline sm:no-underline underline-offset-4">FireQuizzes</strong>
             </MyDialog> — a quiz web app for curious minds
           </li>
           <li>
@@ -148,7 +148,7 @@ export default function Page() {
               buttonText="Download from Google Play"
               dimensions="w-[180px] h-auto"
             >
-              <strong>Orbit Ball</strong>
+              <strong className="underline sm:no-underline underline-offset-4">Orbit Ball</strong>
             </MyDialog> — minimalist mobile game on the Play Store
           </li>
           <li>
