@@ -78,7 +78,7 @@ export default function Page() {
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 mt-6">
         <h1 className="text-2xl font-medium tracking-tight">
-          Cool Shit I've Built
+          Cool Stuff I've Built
         </h1>
         <AudioControls 
           audioName="home-page/projects.mp3"
@@ -160,7 +160,7 @@ export default function Page() {
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 mt-8">
         <h1 className="text-2xl font-medium tracking-tight">
-          Let's Build Cool Shit Together
+          Let's Build Cool Stuff Together
         </h1>
         <AudioControls 
           audioName="home-page/lets-build.mp3"
