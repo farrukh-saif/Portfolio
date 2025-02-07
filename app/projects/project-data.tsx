@@ -64,7 +64,7 @@ export const projects: Project[] = [
     dialogLink:"https://firequizzes.com",
     dialogDesc:"Quiz platform for curious minds",
     buttonText:"Explore Live Demo →",
-    dimensions:"h-[330px] w-auto"
+    dimensions:"w-[70vw] max-w-[500px] h-auto"
   },
   {
     title: "Orbit Ball",

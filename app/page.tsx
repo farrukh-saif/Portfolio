@@ -135,7 +135,7 @@ export default function Page() {
               link="https://firequizzes.com" 
               desc="Quiz platform for curious minds"
               buttonText="Explore Live Demo →"
-              dimensions="h-[330px] w-auto"
+              dimensions="w-[70vw] max-w-[500px] h-auto"
             >
               <strong className="underline sm:no-underline underline-offset-4">FireQuizzes</strong>
             </MyDialog> — a quiz web app for curious minds
