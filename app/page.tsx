@@ -52,7 +52,7 @@ export default function Page() {
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 mt-6">
         <h1 className="text-2xl font-medium tracking-tight">
-          Tools of the trade
+          Tools of the Trade
         </h1>
         <AudioControls 
           audioName="home-page/tools.mp3"
