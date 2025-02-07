@@ -78,7 +78,7 @@ export default function Page() {
           Who am I?
         </h1>
         <AudioControls 
-          audioName="test.mp3"
+          audioName="home-page/whoami.mp3"
           activeAudioName={activeAudioName}
           onPlay={setActiveAudioName}
           resetAllExcept={handleResetOthers}
@@ -87,9 +87,11 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Just a regular dude who's into tech and is tryna have a fun time on Earth. Did my undergrad in <strong>Computer Engineering at ODTÜ</strong> in Turkey. Moved to <strong>Canada {Math.floor((-new Date('2024-09-06').getTime() + new Date().getTime()) / (1000 * 60 * 60 * 24 * 30))} months ago</strong>. Starting my <strong>Master’s in AI at the University of Waterloo</strong> this Spring. My experience spans <strong>machine learning, software development, and augmented reality</strong>. The type of nerd who reads research papers for fun and builds because curiosity won’t let me do otherwise.
+          Just a regular dude who's into AI and tech, tryna have a good time on Earth. Did my undergrad in <strong>Computer Engineering at ODTÜ</strong> in Turkey and moved to <strong>Canada {Math.floor((-new Date('2024-09-06').getTime() + new Date().getTime()) / (1000 * 60 * 60 * 24 * 30))} months ago</strong>. Starting my <strong>Master’s studying AI at the University of Waterloo</strong> this Spring.
         </p>
-        
+        <p>
+        I'm the type of nerd who reads research papers for fun and loves building stuff. My experience spans <strong>machine learning, software development, and augmented reality</strong>—but <strong>AI is where I thrive</strong>. Whether it’s <strong>extracting insights from data, training models, working with LLMs, or setting up data pipelines</strong>, I’m your man. 
+        </p>
       </div>
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 mt-6">
@@ -97,7 +99,7 @@ export default function Page() {
           Tools of the trade
         </h1>
         <AudioControls 
-          audioName="tools-new.mp3"
+          audioName="home-page/tools.mp3"
           activeAudioName={activeAudioName}
           onPlay={setActiveAudioName}
           resetAllExcept={handleResetOthers}
@@ -120,7 +122,7 @@ export default function Page() {
           Cool Shit I've Built
         </h1>
         <AudioControls 
-          audioName="home-page.mp3"
+          audioName="home-page/projects.mp3"
           activeAudioName={activeAudioName}
           onPlay={setActiveAudioName}
           resetAllExcept={handleResetOthers}
@@ -202,7 +204,7 @@ export default function Page() {
           Let's Build Cool Shit Together
         </h1>
         <AudioControls 
-          audioName="sora.mp3"
+          audioName="home-page/lets-build.mp3"
           activeAudioName={activeAudioName}
           onPlay={setActiveAudioName}
           resetAllExcept={handleResetOthers}
