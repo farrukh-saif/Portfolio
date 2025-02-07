@@ -7,52 +7,12 @@ import { MyDialog } from './components/project-dialog';
 
 export default function Page() {
   const [activeAudioName, setActiveAudioName] = useState<string | null>(null);
-  let [isOpen, setIsOpen] = useState(true)
   const handleResetOthers = (currentAudio: string) => {
     setActiveAudioName(currentAudio);
   };
 
   return (
     <section>
-
-{/*       
-    <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
-      <div className="fixed inset-0 bg-black/50 backdrop-blur-md dark:bg-white/10" />
-      <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
-        <DialogPanel className="max-w-2xl space-y-4 border border-neutral-200 bg-white p-6 rounded-2xl shadow-2xl dark:border-neutral-800 dark:bg-neutral-900">
-          <div className="space-y-4">
-            <DialogTitle className="text-xl font-bold text-neutral-900 text-center dark:text-neutral-100">
-              FireQuizzes Project
-            </DialogTitle>
-            
-            <div className="group relative overflow-hidden rounded-lg transition-all">
-              <img 
-                className="w-full h-auto grayscale-[0.5] group-hover:grayscale-0 transition-all duration-300"
-                src="firequizzes.png" 
-                alt="Project preview" 
-              />
-              <div className="absolute inset-0 bg-black/40 transition-all group-hover:bg-black/20 dark:bg-neutral-900/20 dark:group-hover:bg-neutral-900/10" />
-            </div>
-
-            <div className="text-center">
-              <a
-                href="https://www.google.com"
-                target="_blank"
-                rel="noopener"
-                className="inline-block px-6 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-100 rounded-md transition-colors font-medium text-sm shadow-md dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-200"
-              >
-                Explore Live Demo →
-              </a>
-            </div>
-
-            <Description className="text-neutral-600 text-center text-sm dark:text-neutral-400">
-              Interactive quiz platform built with modern web technologies
-            </Description>
-          </div>
-        </DialogPanel>
-      </div>
-    </Dialog> */}
-
       <a href={socialLinks.linkedin} target="_blank">
         <Image
           src="/face-pic.jpg"
@@ -64,10 +24,6 @@ export default function Page() {
           priority
         />
       </a>
-{/* 
-      <div className="prose prose-neutral dark:prose-invert">
-      <p>⚠️ I'm building out the narration feature and yes I'm testing on production. It's my website boi I does what I wish to. 🚧 </p>
-      </div> */}
 
       <h1 className="sm:text-3xl text-2xl font-medium tracking-tight">
         Hey there! I'm Farrukh 👋
@@ -108,9 +64,12 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <div className="flex flex-col justify-center items-center gap-3">
-          <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=py,pytorch,sklearn,selenium,anaconda,unity" alt="My Skills" />
-          <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=tensorflow,opencv,flutter,firebase,react,androidstudio" alt="My Skills" />
-          <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=cs,docker,gcp,arduino,git,mysql" alt="My Skills" />
+          {/* If I wanna add new technologies I can use this line - Caching to speed up */}
+          {/* <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=py,pytorch,sklearn,selenium,anaconda,unity" alt="My Skills" /> */}
+          
+          <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="home-page/icons.svg" alt="My Skills" />
+          <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="home-page/icons-1.svg" alt="My Skills" />
+          <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="home-page/icons-2.svg" alt="My Skills" />
         </div>
         <p className="text-center text-sm italic">
           These might be tools I've used extensively in the past, but believe me when I say that my tools are just that, my tools. It's the problem that matters, I'll learn whatever it takes.

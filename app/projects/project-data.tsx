@@ -3,32 +3,78 @@ export interface Project {
   startDate: string;
   endDate: string;
   description: string;
-  url: string;
+  src: string;
+  dialogLink: string | undefined;
+  dialogDesc: string | undefined;
+  buttonText: string | undefined;
+  dimensions: string | undefined;
 }
 
 export const projects: Project[] = [
   {
-    title: "Image Annotation Tool & Admin Panel",
-    startDate: "October 2023",
-    endDate: "January 2024",
-    description:
-      "Created a customizable, project-agnostic Flutter web application for image annotation, supporting flexible data collection for computer vision and ML projects. Developed an adaptable admin panel to manage annotation sessions, user roles, and monitor KPIs, allowing for easy customization across various applications.",
-    url: "https://example.com/",
+    title: "Data Annotation Site & Admin Panel",
+    startDate: "",
+    endDate: "",
+    description: "Built these for a data collection campaign. We gathered data from my university and paid contributors on Microworkers. Developed with Flutter and Firebase, plus other GCP services. Open-sourced (after stripping proprietary info) so others can use it.",
+    src: "home-page/admin-panel.png",
+    dialogLink: "https://github.com/farrukh-saif/Admin-Panel",
+    dialogDesc: "Open-sourced data annotation platform with admin capabilities",
+    buttonText: "View Admin Panel on GitHub",
+    dimensions: undefined
   },
   {
-    title: "Object Detection Solution for Trash Segregation",
-    startDate: "June 2023",
-    endDate: "January 2024",
-    description:
-      "Developed and deployed a fine-tuned TensorFlow object detection model as a mobile app, enabling live camera-based trash classification for automatic recycling into categories like paper, metal, organic, and plastic.",
-    url: "https://example.com/",
+    title: "Object Detection Project",
+    startDate: "",
+    endDate: "",
+    description: "Fine-tuned a model to sort waste into recycling categories. Mainly used YOLO, but also tested SSD. Spent long nights with my computer running full blast, fans blowing like a jet engine (sorry, ex-roommate).",
+    src: "home-page/object_detection.jpg",
+    dialogLink: undefined,
+    dialogDesc: "Computer vision solution for recycling automation",
+    buttonText: undefined,
+    dimensions: "h-[400px]"
   },
   {
-    title: "Novelty Detection for Movie Posters",
-    startDate: "December 2022",
-    endDate: "January 2023",
-    description:
-      "Developed a novelty detection system using an autoencoder to identify unique movies based on poster.",
-    url: "https://example.com/",
+    title: "Robotic Arm Reinforcement Learning Environment & Agent",
+    startDate: "",
+    endDate: "",
+    description: "Made a custom environment for a robotic arm and trained a bot using reinforcement learning to control it. Open-sourced the code so others can use the environment too.",
+    src:"home-page/ai-playing.gif",
+    dialogLink:"https://syedfarrukhsaif.com/blog/training-a-robotic-arm-to-move-training-ai-in-a-custom-world",
+    dialogDesc:"Trained an AI to operate a robotic arm in a custom virtual environment",
+    buttonText:"Read Blog",
+    dimensions: undefined
   },
+  {
+    title: "Augmented Reality Education Apps",
+    startDate: "",
+    endDate: "",
+    description: "Built apps where you point your camera at cards, and 3D objects (like a dinosaur or cell) appear, blending into the real world. Created with Unity and AR SDKs.",
+    src:"home-page/brainsteam.webp",
+    dialogLink:"https://apps.apple.com/us/app/brainsteam-flashcards/id1486175844",
+    dialogDesc: "AR educational apps with 3D object visualization",
+    buttonText:"Explore on App Store",
+    dimensions:"h-[400px] w-auto",
+  },
+  {
+    title: "FireQuizzes",
+    startDate: "",
+    endDate: "",
+    description: "A deployed quiz web app. Just drop in a new JSON file, and it auto-generates a new quiz—super fast for quick iterations based on user feedback.",
+    src:"home-page/firequizzes.png",
+    dialogLink:"https://firequizzes.com",
+    dialogDesc:"Quiz platform for curious minds",
+    buttonText:"Explore Live Demo →",
+    dimensions:"h-[330px] w-auto"
+  },
+  {
+    title: "Orbit Ball",
+    startDate: "",
+    endDate: "",
+    description: "A Unity game where you guide a planet around astronomical objects, trying to reach a wormhole. Uses the phone's accelerometer. Published on the Play Store.",
+    src:"home-page/orbit-ball.webp",
+    dialogLink:"https://play.google.com/store/apps/details?id=com.DefaultCompany.OrbitBall&hl=en_CA",
+    dialogDesc:"Minimalist mobile game on the Play Stores",
+    buttonText:"Download from Google Play",
+    dimensions:"w-[180px] h-auto"
+  }
 ];
