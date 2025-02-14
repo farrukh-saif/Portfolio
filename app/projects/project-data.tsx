@@ -76,5 +76,16 @@ export const projects: Project[] = [
     dialogDesc:"Minimalist mobile game on the Play Stores",
     buttonText:"Download from Google Play",
     dimensions:"w-[180px] h-auto"
+  },
+  {
+    title: "Image Filter App",
+    startDate: "",
+    endDate: "",
+    description: "A simple Flutter based mobile app that runs image processing code natively using C++ for efficiency. Also includes a FastAPI backend to mock a cloud-based image processor.",
+    src:"home-page/image_filter_screen_recording.gif",
+    dialogLink:"https://github.com/farrukh-saif/Image-Filter-App",
+    dialogDesc:"Flutter app with C++ image processing",
+    buttonText:"View on GitHub",
+    dimensions:"h-[450px]"
   }
 ];

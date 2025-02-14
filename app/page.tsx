@@ -94,7 +94,7 @@ export default function Page() {
             <MyDialog 
               src="home-page/object_detection.jpg" 
               desc="Fine-tuned model for waste sorting"
-              dimensions="h-[400px]"
+              dimensions="h-[450px]"
             >
               <strong className="underline sm:no-underline underline-offset-4">Object Detection Project</strong>
             </MyDialog> — fine-tuned a model that helps sort waste into recycling categories
@@ -152,7 +152,15 @@ export default function Page() {
             </MyDialog> — minimalist mobile game on the Play Store
           </li>
           <li>
-              <strong>Arduino Musical Instrument</strong> — hacked together a DIY instrument for fun
+            <MyDialog 
+              src="home-page/image_filter_screen_recording.gif" 
+              link="https://github.com/farrukh-saif/Image-Filter-App" 
+              desc="Flutter app with C++ image processing"
+              buttonText="View on GitHub"
+              dimensions="h-[450px]"
+            >
+              <strong className="underline sm:no-underline underline-offset-4">Image Filter App</strong>
+            </MyDialog> — mobile app with C++ image processing
           </li>
           <li><strong>Binary Adder in Minecraft</strong> — yep, it works in-game</li>
         </ul>
