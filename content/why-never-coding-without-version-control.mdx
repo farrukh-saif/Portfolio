@@ -1,0 +1,98 @@
+---
+title: "Why I'm Never Coding Without Version Control (Now)"
+publishedAt: "2025-06-16"
+summary: "Looking back at how I used to avoid version control, and why that was dumb."
+tags: "Development, Git, Version Control, Programming"
+---
+
+So I know for a lot of the readers reading this blog, reading this'll be like taking algebra in uni when you already did advanced calculus in highschool.
+
+You already know version control matters. You've used Git. You've pushed pulled more times than **Ronnie Coleman when he was training for Mr. Olympia.**
+
+This post isn't a tutorial it's just me looking back at how I used to avoid version control, and why that was dumb.
+
+I avoided version control because it seemed unnecessary. Coding is already complex enough:
+
+1. You're keeping a mental summary of a big project — what parts are where.
+2. Syntax
+3. Tradeoff between better code vs more time spent on it - there's always a cleaner, better, faster way to do something.
+4. Real life isn't as clean as the courses — think invalid cache, failing cloud functions, bad actors you now have to account for.
+5. a non-zero delay feedback loop (you might need to add a feature and you can spend days perfecting it but really the designer is gonna come back in and say nah it was better before)
+6. Stuff breaks for no reason. You remove a comment and suddenly prod is on fire.
+7. You're juggling 30 variables, multiple states, and async race conditions.
+
+So I used to think:
+
+**"Why can't I just create a copy of the file when I'm making a major change and revert back if shit hits the fan?"**
+
+If someone sends me their changes, I'll just ask what they changed and scroll to that portion. What's the problem?
+
+# **So what does version control offer?**
+
+- I love git diffs - especially on teams that refactor often. You can trust that the old code worked (it shipped, nobody screamed), so you don't need to re-review it. Just focus on what changed, what you added, and whether *that* part follows the rules.
+
+> "Uhh Bob, the intern… I told you to center a div. Why does your commit have this?"
+> 
+
+<figure>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img 
+        src="/blogs/why-never-coding-without-version-control/image.png" 
+        alt="Git commit with unexpected changes" 
+        width="100%" 
+        style={{ borderRadius: '8px'}}
+        />
+    </div>
+  <figcaption style={{ textAlign: 'center' }}></figcaption>
+</figure>
+
+- I love the concept of pull requests - You get a safe, isolated space to try things, break things, fix things. Then you can review the full history and merge it back. Magic.
+
+- I love being able to go back multiple months and seeing how a file evolved. What changed, why it changed, and whether anything is legacy fluff from before a rearchitecture.
+    
+    > "Oh right, this file is from pre-2023 when we still used that cursed in-house state manager. Let me clean this up."
+    > 
+
+- I love git blame: I hate to say it, but…
+You start associating certain names with certain styles.
+    
+    > "Brad wrote this? Overengineered."
+    > 
+    
+    > "Alexia wrote it? You already know it's unit tested and documented."
+    > 
+    
+    > "Bob the intern? Delete it. (jkjk review first. Then delete.)
+    > 
+
+- Your production is down. You're in your grandma's village. All you've got is a 1995 PC with a CRT monitor and dial-up. Doesn't matter. The repo's online. You can still fix it.
+
+<figure>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img 
+        src="/blogs/why-never-coding-without-version-control/image 1.png" 
+        alt="Old computer with CRT monitor" 
+        width={640} 
+        height={500}
+        style={{ borderRadius: '8px' }}
+        />
+    </div>
+  <figcaption style={{ textAlign: 'center' }}></figcaption>
+</figure>
+
+- I love that it's hard to lose your work. After you commit a snapshot into Git, it's hard to lose progress especially if you push to a remote regularly.
+
+- I love being able to selectively add files to a commit. Sometimes you’re knee-deep in the codebase, experimenting all over the place yet the real, meaningful change is in just one or two files. Git lets you commit only what those files.
+
+# Conclusion
+
+These days, if I'm not git init-ing a project, you already know it's not going anywhere.
+
+And if you're still out here zipping folders and naming them:
+
+`project_final_final_REALLYFINAL_v2`
+
+...
+
+Come on, man.
+We live in a society.
