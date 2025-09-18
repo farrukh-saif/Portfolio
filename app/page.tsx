@@ -33,7 +33,7 @@ export default function Page() {
         <h1 className="text-2xl font-medium tracking-tight">
           Who am I?
         </h1>
-        <AudioControls 
+        <AudioControls
           audioName="home-page/whoami.mp3"
           activeAudioName={activeAudioName}
           onPlay={setActiveAudioName}
@@ -43,10 +43,14 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Just a regular dude who's into AI and tech, tryna have a good time on Earth. Did my undergrad in <strong>Computer Engineering at ODTÜ</strong> in Turkey and moved to <strong>Canada {Math.floor((-new Date('2024-09-06').getTime() + new Date().getTime()) / (1000 * 60 * 60 * 24 * 30))} months ago</strong>. Starting my <strong>Master’s studying AI at the University of Waterloo</strong> this Spring.
+          Just a regular dude into AI and tech, trying to have a good time on Earth. I did my undergrad in
+          <strong> Computer Engineering at ODTÜ</strong> in Turkey and now I’m doing my
+          <strong> Master’s in Systems Design Engineering at the University of Waterloo</strong>.
         </p>
         <p>
-        I'm the type of nerd who reads research papers for fun and loves building stuff. My experience spans <strong>machine learning, software development, and augmented reality</strong>—but <strong>AI is where I thrive</strong>. Whether it’s <strong>extracting insights from data, training models, working with LLMs, or setting up data pipelines</strong>, I’m your man. 
+          I read research papers for fun and love building products. My experience spans
+          <strong> machine learning, software development, and AR</strong>, but
+          <strong> AI is where I thrive</strong>.
         </p>
       </div>
 
@@ -54,7 +58,7 @@ export default function Page() {
         <h1 className="text-2xl font-medium tracking-tight">
           Tools of the Trade
         </h1>
-        <AudioControls 
+        <AudioControls
           audioName="home-page/tools.mp3"
           activeAudioName={activeAudioName}
           onPlay={setActiveAudioName}
@@ -66,7 +70,7 @@ export default function Page() {
         <div className="flex flex-col justify-center items-center gap-3">
           {/* If I wanna add new technologies I can use this line - Caching to speed up */}
           {/* <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="https://skillicons.dev/icons?i=py,pytorch,sklearn,selenium,anaconda,unity" alt="My Skills" /> */}
-          
+
           <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="home-page/icons.svg" alt="My Skills" />
           <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="home-page/icons-1.svg" alt="My Skills" />
           <img className="h-10 grayscale-[0.5] hover:grayscale-[0]" src="home-page/icons-2.svg" alt="My Skills" />
@@ -80,7 +84,7 @@ export default function Page() {
         <h1 className="text-2xl font-medium tracking-tight">
           Cool Stuff I've Built
         </h1>
-        <AudioControls 
+        <AudioControls
           audioName="home-page/projects.mp3"
           activeAudioName={activeAudioName}
           onPlay={setActiveAudioName}
@@ -91,8 +95,19 @@ export default function Page() {
       <div className="prose prose-neutral dark:prose-invert">
         <ul>
           <li>
-            <MyDialog 
-              src="home-page/object_detection.jpg" 
+            <MyDialog
+              src="home-page/whowontheargument_demo.png"
+              link="https://whowontheargument.com"
+              buttonText="Explore Live Demo →"
+              desc="AI Referee for text arguments. Upload a screenshot; detects logical fallacies and manipulation tactics"
+              dimensions="h-[500px]"
+            >
+              <strong className="underline sm:no-underline underline-offset-4">WhoWonTheArgument</strong>
+            </MyDialog> — AI detects fallacies/manipulation from screenshots to judge arguments
+          </li>
+          <li>
+            <MyDialog
+              src="home-page/object_detection.jpg"
               desc="Fine-tuned model for waste sorting"
               dimensions="h-[450px]"
             >
@@ -100,7 +115,7 @@ export default function Page() {
             </MyDialog> — fine-tuned a model that helps sort waste into recycling categories
           </li>
           <li>
-            <MyDialog 
+            <MyDialog
               src="home-page/admin-panel.png" // Add your image path here
               desc="Data annotation platform with admin panel"
               link="https://github.com/farrukh-saif/Admin-Panel"
@@ -110,18 +125,18 @@ export default function Page() {
             </MyDialog> — made it for a data collection campaign I ran to gather user preferences
           </li>
           <li>
-          <MyDialog 
-              src="home-page/ai-playing.gif" 
-              link="https://syedfarrukhsaif.com/blog/training-a-robotic-arm-to-move-training-ai-in-a-custom-world" 
+            <MyDialog
+              src="home-page/ai-playing.gif"
+              link="https://syedfarrukhsaif.com/blog/training-a-robotic-arm-to-move-training-ai-in-a-custom-world"
               desc="Trained an AI to operate a robotic arm in a virtual environment"
               buttonText="Read Blog"
             >
               <strong className="underline sm:no-underline underline-offset-4">Robotic Arm AI Agent</strong>
             </MyDialog> — trained an AI to operate a robotic arm in a virtual environment</li>
           <li>
-            <MyDialog 
-              src="home-page/brainsteam.webp" 
-              link="https://apps.apple.com/us/app/brainsteam-flashcards/id1486175844" 
+            <MyDialog
+              src="home-page/brainsteam.webp"
+              link="https://apps.apple.com/us/app/brainsteam-flashcards/id1486175844"
               desc="I made 2 apps like this, published on both App Store and the Play Store"
               buttonText="Explore on App Store"
               dimensions="h-[400px] w-auto"
@@ -130,9 +145,9 @@ export default function Page() {
             </MyDialog> — published apps for iOS and Android
           </li>
           <li>
-            <MyDialog 
-              src="home-page/firequizzes.png" 
-              link="https://firequizzes.com" 
+            <MyDialog
+              src="home-page/firequizzes.png"
+              link="https://firequizzes.com"
               desc="Quiz platform for curious minds"
               buttonText="Explore Live Demo →"
               dimensions="w-[70vw] max-w-[500px] h-auto"
@@ -141,9 +156,9 @@ export default function Page() {
             </MyDialog> — a quiz web app for curious minds
           </li>
           <li>
-            <MyDialog 
-              src="home-page/orbit-ball.webp" 
-              link="https://play.google.com/store/apps/details?id=com.DefaultCompany.OrbitBall&hl=en_CA" 
+            <MyDialog
+              src="home-page/orbit-ball.webp"
+              link="https://play.google.com/store/apps/details?id=com.DefaultCompany.OrbitBall&hl=en_CA"
               desc="Minimalist mobile game on the Play Stores"
               buttonText="Download from Google Play"
               dimensions="w-[180px] h-auto"
@@ -152,9 +167,9 @@ export default function Page() {
             </MyDialog> — minimalist mobile game on the Play Store
           </li>
           <li>
-            <MyDialog 
-              src="home-page/image_filter_screen_recording.gif" 
-              link="https://github.com/farrukh-saif/Image-Filter-App" 
+            <MyDialog
+              src="home-page/image_filter_screen_recording.gif"
+              link="https://github.com/farrukh-saif/Image-Filter-App"
               desc="Flutter app with C++ image processing"
               buttonText="View on GitHub"
               dimensions="h-[450px]"
@@ -170,7 +185,7 @@ export default function Page() {
         <h1 className="text-2xl font-medium tracking-tight">
           Let's Build Cool Stuff Together
         </h1>
-        <AudioControls 
+        <AudioControls
           audioName="home-page/lets-build.mp3"
           activeAudioName={activeAudioName}
           onPlay={setActiveAudioName}

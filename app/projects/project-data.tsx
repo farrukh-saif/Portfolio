@@ -12,6 +12,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "WhoWonTheArgument",
+    startDate: "",
+    endDate: "",
+    description: "AI Referee for text arguments. Upload a screenshot, and the AI detects logical fallacies and manipulation tactics to show who likely won the argument.",
+    src: "home-page/whowontheargument_demo.png",
+    dialogLink: "https://whowontheargument.com",
+    dialogDesc: "Detects logical fallacies and manipulation tactics from screenshots",
+    buttonText: "Explore Live Demo →",
+    dimensions: "h-[450px]"
+  },
+  {
     title: "Data Annotation Site & Admin Panel",
     startDate: "",
     endDate: "",
@@ -38,10 +49,10 @@ export const projects: Project[] = [
     startDate: "",
     endDate: "",
     description: "Made a custom environment for a robotic arm and trained a bot using reinforcement learning to control it. Open-sourced the code so others can use the environment too.",
-    src:"home-page/ai-playing.gif",
-    dialogLink:"https://syedfarrukhsaif.com/blog/training-a-robotic-arm-to-move-training-ai-in-a-custom-world",
-    dialogDesc:"Trained an AI to operate a robotic arm in a custom virtual environment",
-    buttonText:"Read Blog",
+    src: "home-page/ai-playing.gif",
+    dialogLink: "https://syedfarrukhsaif.com/blog/training-a-robotic-arm-to-move-training-ai-in-a-custom-world",
+    dialogDesc: "Trained an AI to operate a robotic arm in a custom virtual environment",
+    buttonText: "Read Blog",
     dimensions: undefined
   },
   {
@@ -49,43 +60,43 @@ export const projects: Project[] = [
     startDate: "",
     endDate: "",
     description: "Built apps where you point your camera at cards, and 3D objects (like a dinosaur or cell) appear, blending into the real world. Created with Unity and AR SDKs.",
-    src:"home-page/brainsteam.webp",
-    dialogLink:"https://apps.apple.com/us/app/brainsteam-flashcards/id1486175844",
+    src: "home-page/brainsteam.webp",
+    dialogLink: "https://apps.apple.com/us/app/brainsteam-flashcards/id1486175844",
     dialogDesc: "AR educational apps with 3D object visualization",
-    buttonText:"Explore on App Store",
-    dimensions:"h-[400px] w-auto",
+    buttonText: "Explore on App Store",
+    dimensions: "h-[400px] w-auto",
   },
   {
     title: "FireQuizzes",
     startDate: "",
     endDate: "",
     description: "A deployed quiz web app. Just drop in a new JSON file, and it auto-generates a new quiz—super fast for quick iterations based on user feedback.",
-    src:"home-page/firequizzes.png",
-    dialogLink:"https://firequizzes.com",
-    dialogDesc:"Quiz platform for curious minds",
-    buttonText:"Explore Live Demo →",
-    dimensions:"w-[70vw] max-w-[500px] h-auto"
+    src: "home-page/firequizzes.png",
+    dialogLink: "https://firequizzes.com",
+    dialogDesc: "Quiz platform for curious minds",
+    buttonText: "Explore Live Demo →",
+    dimensions: "w-[70vw] max-w-[500px] h-auto"
   },
   {
     title: "Orbit Ball",
     startDate: "",
     endDate: "",
     description: "A Unity game where you guide a planet around astronomical objects, trying to reach a wormhole. Uses the phone's accelerometer. Published on the Play Store.",
-    src:"home-page/orbit-ball.webp",
-    dialogLink:"https://play.google.com/store/apps/details?id=com.DefaultCompany.OrbitBall&hl=en_CA",
-    dialogDesc:"Minimalist mobile game on the Play Stores",
-    buttonText:"Download from Google Play",
-    dimensions:"w-[180px] h-auto"
+    src: "home-page/orbit-ball.webp",
+    dialogLink: "https://play.google.com/store/apps/details?id=com.DefaultCompany.OrbitBall&hl=en_CA",
+    dialogDesc: "Minimalist mobile game on the Play Stores",
+    buttonText: "Download from Google Play",
+    dimensions: "w-[180px] h-auto"
   },
   {
     title: "Image Filter App",
     startDate: "",
     endDate: "",
     description: "A Flutter-based mobile app that runs image processing code natively using OpenCV in C++ for efficiency. Also includes a FastAPI backend to mock a cloud-based image processor.",
-    src:"home-page/image_filter_screen_recording.gif",
-    dialogLink:"https://github.com/farrukh-saif/Image-Filter-App",
-    dialogDesc:"Flutter app with C++ image processing",
-    buttonText:"View on GitHub",
-    dimensions:"h-[450px]"
+    src: "home-page/image_filter_screen_recording.gif",
+    dialogLink: "https://github.com/farrukh-saif/Image-Filter-App",
+    dialogDesc: "Flutter app with C++ image processing",
+    buttonText: "View on GitHub",
+    dimensions: "h-[450px]"
   }
 ];
