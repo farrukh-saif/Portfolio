@@ -42,16 +42,33 @@ export default function Page() {
       </div>
 
       <div className="prose prose-neutral dark:prose-invert">
+
         <p>
+
           Just a regular dude into AI and tech, trying to have a good time on Earth. I did my undergrad in
+
           <strong> Computer Engineering at ODTÜ</strong> in Turkey and now I’m doing my
-          <strong> Master’s in Systems Design Engineering at the University of Waterloo</strong>.
+
+          <strong> Master’s in Systems Design Engineering at the University of Waterloo</strong>, where I work at the <strong>Photomedicine Labs (PML)</strong>.
+
         </p>
+
         <p>
-          I read research papers for fun and love building products. My experience spans
-          <strong> machine learning, software development, and AR</strong>, but
-          <strong> AI is where I thrive</strong>.
+
+          At PML, I work with optical imaging systems like <strong>OCT</strong> and <strong>PARS (Photon Absorption Remote Sensing)</strong>—a technique developed by the lab for non-contact, label-free imaging.
+
         </p>
+
+        <p>
+
+          I read research papers for fun and love building products. My experience spans
+
+          <strong> machine learning, software development, and AR</strong>, but
+
+          <strong> AI is where I thrive</strong>.
+
+        </p>
+
       </div>
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 mt-6">
