@@ -4,6 +4,7 @@ import { useMemo, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
+import { orbitAwayY } from "@/lib/flight";
 import { scrollState } from "@/lib/scroll-state";
 
 const earthVertex = /* glsl */ `
@@ -116,6 +117,12 @@ export function Earth() {
         group.current.rotation.x,
         -0.18 + t * 0.22,
         1.6,
+        delta,
+      );
+      group.current.position.y = THREE.MathUtils.damp(
+        group.current.position.y,
+        orbitAwayY(t),
+        2.4,
         delta,
       );
     }

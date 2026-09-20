@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   title: "Farrukh Saif — Space optics & imaging",
   description:
     "Optical Engineering Specialist at Honeywell Aerospace and MASc researcher at UW, working on spaceborne optical systems, quantum communications, and biomedical imaging.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

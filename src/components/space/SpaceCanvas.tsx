@@ -56,7 +56,7 @@ export default function SpaceCanvas() {
       <div className="pointer-events-none fixed inset-0 z-0 bg-[#02010a]">
         <Canvas
           dpr={[1, 1.5]}
-          camera={{ position: [1.2, 3.6, 10.5], fov: 42, near: 0.1, far: 140 }}
+          camera={{ position: [3.2, 5.1, 12.4], fov: 42, near: 0.1, far: 140 }}
           gl={{
             antialias: true,
             alpha: false,
@@ -67,7 +67,7 @@ export default function SpaceCanvas() {
             gl.setClearColor("#02010a", 1);
             gl.toneMapping = THREE.NoToneMapping;
             gl.outputColorSpace = THREE.SRGBColorSpace;
-            camera.lookAt(4.4, 1.6, 0);
+            camera.lookAt(6.8, 2.7, 0);
             window.setTimeout(() => setReady(true), 900);
           }}
         >

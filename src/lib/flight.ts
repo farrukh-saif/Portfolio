@@ -19,3 +19,8 @@ export function smoothstep(edge0: number, edge1: number, x: number) {
   const t = Math.min(Math.max((x - edge0) / (edge1 - edge0), 0), 1);
   return t * t * (3 - 2 * t);
 }
+
+/** Slide Earth and the constellation off-screen as the footer comes in. */
+export function orbitAwayY(t: number) {
+  return -smoothstep(0.76, 0.9, t) * 14;
+}

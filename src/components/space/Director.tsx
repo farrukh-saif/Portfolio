@@ -7,13 +7,13 @@ import { flightPath, smoothstep } from "@/lib/flight";
 import { samplePath, scrollState, type Keyframe } from "@/lib/scroll-state";
 
 const HERO_CAM: Keyframe[] = [
-  { t: 0, p: [1.2, 3.6, 10.5] },
+  { t: 0, p: [3.2, 5.1, 12.4] },
   { t: 0.1, p: [0.6, 3.0, 10.2] },
   { t: 0.28, p: [-2.4, 2.2, 10.0] },
 ];
 
 const HERO_LOOK: Keyframe[] = [
-  { t: 0, p: [4.4, 1.6, 0] },
+  { t: 0, p: [6.8, 2.7, 0] },
   { t: 0.1, p: [3.2, 1.1, 0] },
   { t: 0.28, p: [0.8, 0.6, 0] },
 ];
@@ -26,7 +26,7 @@ export function Director() {
   const smoothed = useRef(0);
   const targetPos = useMemo(() => new THREE.Vector3(), []);
   const targetLook = useMemo(() => new THREE.Vector3(), []);
-  const currentLook = useMemo(() => new THREE.Vector3(4.4, 1.6, 0), []);
+  const currentLook = useMemo(() => new THREE.Vector3(6.8, 2.7, 0), []);
   const heroPos = useMemo(() => new THREE.Vector3(), []);
   const heroLook = useMemo(() => new THREE.Vector3(), []);
   const trackPos = useMemo(() => new THREE.Vector3(), []);

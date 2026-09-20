@@ -4,7 +4,7 @@ export const site = {
   role: "Optical Engineering Specialist at Honeywell Aerospace",
   tagline:
     "I assemble, align, and test spaceborne optical systems — and I still build biomedical imaging instruments at UW: photothermal microscopes, OCT, and the software that turns raw light into an image.",
-  location: "Cambridge / UW, ON",
+  location: "Waterloo, ON",
   email: "syedfarrukh.saif@uwaterloo.com",
   phone: "+1 382 889 4115",
   phoneHref: "tel:+13828894115",
