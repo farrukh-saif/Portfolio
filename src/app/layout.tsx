@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Space_Grotesk } from "next/font/google";
+import { SiteNav } from "@/components/portfolio/SiteNav";
+import { SpaceBackdrop } from "@/components/space/SpaceBackdrop";
 import "./globals.css";
 
 const sans = Space_Grotesk({
@@ -13,9 +15,9 @@ const mono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Syed Farrukh Saif — Space optics & imaging",
+  title: "Farrukh Saif — Space optics & imaging",
   description:
-    "Optical AIT Engineering Technician at Honeywell Aerospace and MASc researcher at Waterloo, working on spaceborne optical systems, quantum communications, and biomedical imaging.",
+    "Optical Engineering Specialist at Honeywell Aerospace and MASc researcher at UW, working on spaceborne optical systems, quantum communications, and biomedical imaging.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -25,6 +27,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${sans.variable} ${mono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-[#02010a] font-sans text-white">
+        <SpaceBackdrop />
+        <div className="vignette" />
+        <SiteNav />
         {children}
       </body>
     </html>

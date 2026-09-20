@@ -3,16 +3,8 @@
 import { useMemo, useRef, type MutableRefObject } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
-import { samplePath, scrollState } from "@/lib/scroll-state";
-
-const ROCKET_PATH = [
-  { t: 0, p: [2.55, 0.15, 1.15] as [number, number, number] },
-  { t: 0.22, p: [2.85, 0.85, 1.55] as [number, number, number] },
-  { t: 0.4, p: [3.6, 2.1, 2.4] as [number, number, number] },
-  { t: 0.58, p: [4.4, 3.6, 1.2] as [number, number, number] },
-  { t: 0.76, p: [2.2, 5.4, -1.6] as [number, number, number] },
-  { t: 1, p: [-1.2, 7.2, -4.8] as [number, number, number] },
-];
+import { flightPath } from "@/lib/flight";
+import { scrollState } from "@/lib/scroll-state";
 
 function Flame({ strength }: { strength: MutableRefObject<number> }) {
   const flame = useRef<THREE.Mesh>(null);
@@ -36,7 +28,7 @@ function Flame({ strength }: { strength: MutableRefObject<number> }) {
       <mesh ref={flame} rotation={[Math.PI, 0, 0]}>
         <coneGeometry args={[0.16, 0.72, 16]} />
         <meshBasicMaterial
-          color="#4cc9ff"
+          color="#ff6a18"
           transparent
           opacity={0.45}
           blending={THREE.AdditiveBlending}
@@ -46,7 +38,7 @@ function Flame({ strength }: { strength: MutableRefObject<number> }) {
       <mesh ref={inner} rotation={[Math.PI, 0, 0]}>
         <coneGeometry args={[0.08, 0.48, 12]} />
         <meshBasicMaterial
-          color="#fff4d6"
+          color="#ffe7a8"
           transparent
           opacity={0.85}
           blending={THREE.AdditiveBlending}
@@ -67,11 +59,11 @@ export function Rocket() {
   useFrame((_, delta) => {
     if (!group.current) return;
     const t = scrollState.progress;
-    const pos = samplePath(ROCKET_PATH, t);
+    const pos = flightPath(t);
     nextPos.set(pos[0], pos[1], pos[2]);
     group.current.position.lerp(nextPos, 1 - Math.exp(-delta * 3.2));
 
-    const ahead = samplePath(ROCKET_PATH, Math.min(t + 0.04, 1));
+    const ahead = flightPath(Math.min(t + 0.03, 1));
     lookTarget.set(ahead[0], ahead[1], ahead[2]);
     group.current.lookAt(lookTarget);
     group.current.rotateX(Math.PI / 2);
@@ -143,7 +135,7 @@ export function Rocket() {
       <pointLight
         ref={light}
         position={[0, -1.35, 0]}
-        color="#7ad7ff"
+        color="#ff7a2a"
         distance={6}
         intensity={2}
       />

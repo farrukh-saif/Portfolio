@@ -1,10 +1,10 @@
 export const site = {
-  name: "Syed Farrukh Saif",
+  name: "Farrukh Saif",
   firstName: "Farrukh",
-  role: "Optical AIT Engineering Technician at Honeywell Aerospace",
+  role: "Optical Engineering Specialist at Honeywell Aerospace",
   tagline:
-    "I assemble, align, and test spaceborne optical systems — and I still build biomedical imaging instruments at Waterloo: photothermal microscopes, OCT, and the software that turns raw light into an image.",
-  location: "Cambridge / Waterloo, ON",
+    "I assemble, align, and test spaceborne optical systems — and I still build biomedical imaging instruments at UW: photothermal microscopes, OCT, and the software that turns raw light into an image.",
+  location: "Cambridge / UW, ON",
   email: "syedfarrukh.saif@uwaterloo.com",
   phone: "+1 382 889 4115",
   phoneHref: "tel:+13828894115",
@@ -15,7 +15,7 @@ export const site = {
   ],
   about: {
     heading: "From the optical bench to orbit.",
-    lead: "Optical AIT Engineering Technician at Honeywell Aerospace in Cambridge, working on assembly, integration, alignment, and testing of spaceborne optical systems and satellite hardware — including quantum-encryption and quantum-communications payloads. In parallel I am a master’s researcher at the University of Waterloo developing optical imaging systems for biomedical applications.",
+    lead: "Optical Engineering Specialist at Honeywell Aerospace in Cambridge, working on assembly, integration, alignment, and testing of spaceborne optical systems and satellite hardware — including quantum-encryption and quantum-communications payloads. In parallel I am a master’s researcher at UW developing optical imaging systems for biomedical applications.",
     body: "Honeywell’s Cambridge space operations grew out of COM DEV’s space-hardware business. At PhotoMedicine Labs, supervised by Dr. Parsin Haji Reza, I built a photothermal laser scanning microscope from the ground up — lasers, scanners, relay optics, alignment, and the Python stack that acquires and forms the image. The through-line is the same: hardware, signal, and software as one system.",
     stats: [
       { label: "Now", value: "Honeywell" },
@@ -30,6 +30,7 @@ export const site = {
       detail: "PhotoMedicine Labs · Dr. Parsin Haji Reza",
       when: "Expected Dec. 2026",
       where: "Waterloo, ON",
+      logo: "uw" as const,
     },
     {
       school: "Middle East Technical University",
@@ -37,15 +38,17 @@ export const site = {
       detail: "Graduated with Honors",
       when: "Jun. 2024",
       where: "Ankara, TR",
+      logo: "odtu" as const,
     },
   ],
   experience: [
     {
       code: "01",
       company: "Honeywell Aerospace",
-      role: "Optical AIT Engineering Technician I",
+      role: "Optical Engineering Specialist",
       when: "Sep. 2026 — Present",
       where: "Cambridge, ON",
+      logo: "honeywell" as const,
       tags: ["AIT", "Space optics", "Quantum comms", "Alignment"],
       highlights: [
         "Assembly, integration, alignment, and testing of spaceborne optical systems and satellite hardware.",
@@ -59,7 +62,8 @@ export const site = {
       company: "PhotoMedicine Labs",
       role: "Researcher",
       when: "Nov. 2025 — Present",
-      where: "Waterloo, ON",
+      where: "UW, ON",
+      logo: "uw" as const,
       tags: ["Photothermal", "OCT", "Python", "Optics"],
       highlights: [
         "Designed and built a photothermal microscope from the ground up: lasers, galvanometer scanners, relay optics, dichroics, objectives, and optomechanics.",
@@ -74,6 +78,7 @@ export const site = {
       role: "Full Stack Developer",
       when: "Mar. 2025 — Jun. 2025",
       where: "Remote",
+      logo: "everpixel" as const,
       tags: ["C++", "WebAssembly", "UI"],
       highlights: [
         "Ported a C++ computer vision pipeline to WebAssembly so image processing could run in the browser.",

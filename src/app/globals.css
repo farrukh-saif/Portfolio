@@ -37,6 +37,13 @@ body {
   color: white;
 }
 
+.panel {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(2, 1, 10, 0.78);
+  backdrop-filter: blur(18px);
+}
+
 .vignette {
   pointer-events: none;
   position: fixed;

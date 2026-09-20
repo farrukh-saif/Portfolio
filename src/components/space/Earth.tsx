@@ -37,7 +37,7 @@ const earthFragment = /* glsl */ `
     float dayFactor = smoothstep(-0.12, 0.28, ndl);
 
     vec3 day = texture2D(dayMap, vUv).rgb;
-    vec3 night = texture2D(nightMap, vUv).rgb * 2.8;
+    vec3 night = texture2D(nightMap, vUv).rgb * 1.8;
     float specMask = texture2D(specularMap, vUv).r;
 
     vec3 viewDir = normalize(cameraPosition - vWorldPos);
@@ -45,10 +45,11 @@ const earthFragment = /* glsl */ `
     float spec = pow(max(dot(normal, halfV), 0.0), 36.0) * specMask * dayFactor;
 
     vec3 color = mix(night, day, dayFactor);
-    color += vec3(0.55, 0.8, 1.0) * spec * 0.55;
+    color += vec3(0.45, 0.7, 1.0) * spec * 0.18;
 
     float fresnel = pow(1.0 - max(dot(normal, viewDir), 0.0), 2.4);
-    color += vec3(0.25, 0.55, 1.0) * fresnel * 0.22;
+    color += vec3(0.25, 0.55, 1.0) * fresnel * 0.12;
+    color = clamp(color, 0.0, 1.0);
 
     gl_FragColor = vec4(color, 1.0);
   }
@@ -92,8 +93,9 @@ export function Earth() {
     "/textures/earth-clouds.png",
   ]);
 
-  dayMap.colorSpace = THREE.SRGBColorSpace;
-  nightMap.colorSpace = THREE.SRGBColorSpace;
+  dayMap.colorSpace = THREE.NoColorSpace;
+  nightMap.colorSpace = THREE.NoColorSpace;
+  specularMap.colorSpace = THREE.NoColorSpace;
   cloudsMap.colorSpace = THREE.SRGBColorSpace;
 
   const uniforms = useMemo(
@@ -156,7 +158,7 @@ export function Earth() {
           fragmentShader={atmosphereFragment}
           uniforms={{
             glowColor: { value: new THREE.Color("#7ecbff") },
-            intensity: { value: 0.55 },
+            intensity: { value: 0.28 },
             power: { value: 2.6 },
           }}
           transparent
@@ -173,7 +175,7 @@ export function Earth() {
           fragmentShader={atmosphereFragment}
           uniforms={{
             glowColor: { value: new THREE.Color("#4aa7ff") },
-            intensity: { value: 0.42 },
+            intensity: { value: 0.22 },
             power: { value: 3.8 },
           }}
           transparent
