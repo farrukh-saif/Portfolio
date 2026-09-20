@@ -16,7 +16,7 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title: `${post.metadata.title} — Farrukh Saif`,
+    title: `${post.metadata.title} · Farrukh Saif`,
     description: post.metadata.summary,
   };
 }

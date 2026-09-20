@@ -9,7 +9,7 @@ const SpaceCanvas = dynamic(() => import("./SpaceCanvas"), {
 });
 
 function sceneMode(pathname: string): SceneMode {
-  if (pathname === "/blog") return "orbit";
+  if (pathname === "/blog" || pathname === "/projects") return "orbit";
   if (pathname.startsWith("/blog/")) return "stars";
   return "full";
 }

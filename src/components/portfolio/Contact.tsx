@@ -8,14 +8,15 @@ export function Contact() {
     >
       <div className="mx-auto w-full max-w-3xl">
         <p className="font-mono text-[11px] tracking-[0.32em] text-cyan-200/80">
-          04 / OPEN CHANNEL
+          05 / OPEN CHANNEL
         </p>
         <h2 className="mt-4 text-4xl font-medium tracking-tight text-white md:text-6xl">
           Send a signal.
         </h2>
         <p className="mx-auto mt-5 max-w-lg text-base leading-8 text-white/75">
-          For space optical AIT, quantum-comms hardware, biomedical imaging, or
-          software that has to live next to a laser — write me.
+          Whether it's space optics or microscopes, if it's optics, hit me up.
+          Computer engineering undergrad, so I can do both the hardware and the
+          code.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a

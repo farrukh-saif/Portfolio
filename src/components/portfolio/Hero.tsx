@@ -31,7 +31,7 @@ export function Hero() {
         </p>
         <div className="mt-10 flex items-center justify-center gap-6 font-mono text-[11px] tracking-[0.24em] text-white/50">
           <span className="h-px w-10 bg-cyan-300/70" />
-          SCROLL TO ENTER ORBIT
+          SCROLL TO LAUNCH
         </div>
       </div>
     </section>

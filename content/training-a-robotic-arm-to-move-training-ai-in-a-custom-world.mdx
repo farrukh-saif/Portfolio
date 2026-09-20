@@ -11,9 +11,9 @@ In my personal philosophy, I classify newly learned information into different t
 
 Here's how it breaks down:
 
-1. **Experienced it myself** – The gold standard. If I’ve lived it, it’s as true as it gets.
-2. **Experienced by someone I know** – Second-hand truth, but still reliable if the source is trustworthy.
-3. **Anecdotes** – The wild west of truth. Entertaining, but take it with a grain of salt.
+1. **Experienced it myself** - The gold standard. If I’ve lived it, it’s as true as it gets.
+2. **Experienced by someone I know** - Second-hand truth, but still reliable if the source is trustworthy.
+3. **Anecdotes** - The wild west of truth. Entertaining, but take it with a grain of salt.
 
 Now I’ve heard great things about reinforcement learning. The promise of having an agent that knows nothing about its environment, learn how to operate in it through trial and error seems almost too good to be true!
 
@@ -40,13 +40,13 @@ But, being the skeptic that I am, I couldn’t help but wonder: *Does RL really
 
 ## But wait… What are we building?
 
-Let’s start by dreaming up an idea—a universe for our little AI to spend its life in. I’ve always loved world-building in books/movies, and now it’s time for me to create my own.
+Let’s start by dreaming up an idea, a universe for our little AI to spend its life in. I’ve always loved world-building in books/movies, and now it’s time for me to create my own.
 
 Okay, how about we build a **robot arm**? It’s a precursor to robots that can actually pick things up. To keep things simple, let’s make it a 2D bot with 2D limbs.
 
 We can make it do many things, like drawing, catching, juggling, waving, punching etc.
 
-Now, technically, we don’t *have* to stick to human constraints—like making sure the elbow can’t bend backward—but that would look… well, funky. I want to see human-like behavior emerge from this coded-up bot, so let’s keep it somewhat realistic.
+Now, technically, we don’t *have* to stick to human constraints, like making sure the elbow can’t bend backward, but that would look… well, funky. I want to see human-like behavior emerge from this coded-up bot, so let’s keep it somewhat realistic.
 
 <figure>
   <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -79,7 +79,7 @@ So I’m thinking it’s gonna have two motors: one on the shoulder and another 
 </figure>
 
 
-The goal of the environment will be simple: **reach for the target**. Sounds easy, right? But don’t forget—motor skills are hard. Even humans, with their billions of neurons, struggle to master them. Just watch a toddler trying to stand up for the first time.
+The goal of the environment will be simple: **reach for the target**. Sounds easy, right? But don’t forget, motor skills are hard. Even humans, with their billions of neurons, struggle to master them. Just watch a toddler trying to stand up for the first time.
 
 ## Where Do We Start?
 
@@ -89,7 +89,7 @@ But, as mama always said, “Don’t reinvent the wheel.” Doing all that would
 
 So we’re gonna use some libraries to help us out.
 
-My advice? Don’t think of the following libraries as the *only* way to do this. They’re just here to make our lives easier. Think of them as shortcuts—because who doesn’t love a good shortcut?
+My advice? Don’t think of the following libraries as the *only* way to do this. They’re just here to make our lives easier. Think of them as shortcuts, because who doesn’t love a good shortcut?
 
 <h3>
   Tool 1: <a href="https://gymnasium.farama.org/" target="_blank" rel="noopener noreferrer">Gymnasium</a>
@@ -120,7 +120,7 @@ class RobotArmEnv(gym.Env):
   Tool 2: <a href="https://stable-baselines3.readthedocs.io/en/master/index.html" target="_blank" rel="noopener noreferrer">Stable Baselines 3</a>
 </h3>
 
-Next up, **Stable Baselines 3**. This library is a game-changer—it provides prebuilt learning algorithms that work seamlessly with Gymnasium environments. Exactly what we need to get our AI up and running without starting from scratch.
+Next up, **Stable Baselines 3**. This library is a game-changer, it provides prebuilt learning algorithms that work seamlessly with Gymnasium environments. Exactly what we need to get our AI up and running without starting from scratch.
 
 Here’s how simple it is to use Stable Baselines 3:
 
@@ -213,7 +213,7 @@ Not exactly. Here, an agent is simply a decision-making AI that interacts with i
 
 **In Fortnite**:
 
-The agent is the character you control. The environment is the game world—the map, other players, and everything else you interact with.
+The agent is the character you control. The environment is the game world, the map, other players, and everything else you interact with.
 
 <figure>
   <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -257,9 +257,9 @@ The agent interacts with the environment by taking actions which in turn might a
 
 ### Observation
 
-Ideally, you might want to let the robot see the environment in its entirety—raw pixels, full state, everything. But in practice, it’s much more efficient to extract and provide only the most important features. For example, you *could* teach an AI to play Pong by feeding it thousands of pixels and letting it figure out what to do. But here’s the catch: not only would the AI be learning how to play Pong, it’d also be learning how to *see*. And that’s a lot of extra work, making the process painfully slow.
+Ideally, you might want to let the robot see the environment in its entirety, raw pixels, full state, everything. But in practice, it’s much more efficient to extract and provide only the most important features. For example, you *could* teach an AI to play Pong by feeding it thousands of pixels and letting it figure out what to do. But here’s the catch: not only would the AI be learning how to play Pong, it’d also be learning how to *see*. And that’s a lot of extra work, making the process painfully slow.
 
-Sure, this kind of end-to-end learning is possible, but to keep things simple, we’re going to give our agent hand-crafted features—specific pieces of information that we think will help it navigate the environment more effectively.
+Sure, this kind of end-to-end learning is possible, but to keep things simple, we’re going to give our agent hand-crafted features, specific pieces of information that we think will help it navigate the environment more effectively.
 
 Here’s what our observation space looks like:
 
@@ -277,7 +277,7 @@ Let’s break this down:
 
 1. **Shoulder angle (`self.a1`)** and **elbow angle (`self.a2`)**:
     
-    These are like the robot’s sense of **proprioception**—the awareness of where its limbs are in space. Without this, the bot would have no idea how its arm is positioned.
+    These are like the robot’s sense of **proprioception**, the awareness of where its limbs are in space. Without this, the bot would have no idea how its arm is positioned.
     
 2. **Target position (`self.target`)**:
     
@@ -326,7 +326,7 @@ reward = (
 
 ### Different Algorithms
 
-While the core idea of reinforcement learning is simple—maximize rewards—there are many different algorithms to achieve this. Each has its strengths and trade-offs and honestly, they deserve their own deep dive. Maybe that’s for a future blog. For the curious, I used PPO, mostly because Reddit, YouTube, and the broader RL community kept hyping it up.
+While the core idea of reinforcement learning is simple, maximize rewards, there are many different algorithms to achieve this. Each has its strengths and trade-offs and honestly, they deserve their own deep dive. Maybe that’s for a future blog. For the curious, I used PPO, mostly because Reddit, YouTube, and the broader RL community kept hyping it up.
 
 <figure>
   <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -343,7 +343,7 @@ While the core idea of reinforcement learning is simple—maximize rewards—the
 
 # Let the Training Runs Begin
 
-You’d think the hard part would be setting everything up—creating the environment, setting up the training loop, and all that. But no, by far the hardest part was waiting.
+You’d think the hard part would be setting everything up, creating the environment, setting up the training loop, and all that. But no, by far the hardest part was waiting.
 
 <figure>
   <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -381,7 +381,7 @@ Here’s one of the earlier versions:
 
 Remember the reward function I showed you earlier? Yeah, that’s the *final* version I came up with after training for 2 million steps. Initially, I had a much simpler reward function: the bot only got a reward when it actually hit the target. Sounds logical, right? But as it turns out, that’s not enough.
 
-Enter reward shaping: the art of designing rewards that guide the agent toward desired behavior. Instead of waiting for the bot to randomly stumble upon success, we nudge it in the right direction by rewarding smaller milestones—like moving closer to the target or reducing unnecessary movements.
+Enter reward shaping: the art of designing rewards that guide the agent toward desired behavior. Instead of waiting for the bot to randomly stumble upon success, we nudge it in the right direction by rewarding smaller milestones, like moving closer to the target or reducing unnecessary movements.
 
 Instead of starting over, I kept the same model and tweaked the reward function after 2 million steps. I was hoping some of the training would carry over. Spoiler: it did.
 
@@ -418,7 +418,7 @@ Turns out, reinforcement learning isn’t just a made-up gimmick after all. It a
 
 But here’s a thought: my bot had to go through around **1**00,000 games to get to this point. Meanwhile, I bet a 10-year-old kid could learn to hit the target with their hand after playing with the controls for, like, 10 games.
 
-So, why do humans learn so much faster? One theory is that we rely on prior knowledge—our understanding of how the world works. We don’t start from scratch every time we learn something new. Instead, we build on what we already know, which gives us a massive head start.
+So, why do humans learn so much faster? One theory is that we rely on prior knowledge, our understanding of how the world works. We don’t start from scratch every time we learn something new. Instead, we build on what we already know, which gives us a massive head start.
 
 ---
 
@@ -477,4 +477,4 @@ And if you’re new to reinforcement learning, I highly recommend checking out O
 
 ### Room for Improvement
 
-I’m fully aware that this isn’t the most accurate simulation of a robotic arm. To make it more realistic, we could add gravity, friction, and momentum—because, well, physics is a thing. 😅
+I’m fully aware that this isn’t the most accurate simulation of a robotic arm. To make it more realistic, we could add gravity, friction, and momentum, because, well, physics is a thing. 😅

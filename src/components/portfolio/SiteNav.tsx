@@ -11,6 +11,7 @@ export function SiteNav() {
   const links = [
     { href: onHome ? "#about" : "/#about", label: "About" },
     { href: onHome ? "#work" : "/#work", label: "Work" },
+    { href: onHome ? "#projects" : "/projects", label: "Projects" },
     { href: onHome ? "#stack" : "/#stack", label: "Stack" },
     { href: "/blog", label: "Blog" },
   ];
@@ -27,7 +28,7 @@ export function SiteNav() {
           {site.firstName.toUpperCase()}
         </Link>
 
-        <div className="hidden items-center gap-7 md:flex">
+        <div className="hidden items-center gap-5 md:flex lg:gap-7">
           {links.map((link) => (
             <a
               key={link.label}

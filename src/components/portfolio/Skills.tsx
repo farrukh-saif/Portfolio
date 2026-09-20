@@ -8,7 +8,7 @@ export function Skills() {
     >
       <div className="panel mx-auto w-full max-w-3xl p-7 text-center md:p-10">
         <p className="font-mono text-[11px] tracking-[0.32em] text-cyan-200/80">
-          03 / INSTRUMENTS
+          04 / INSTRUMENTS
         </p>
         <h2 className="mt-4 text-3xl font-medium tracking-tight text-white md:text-5xl">
           Optics, code, and the bench
