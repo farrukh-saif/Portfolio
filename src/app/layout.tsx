@@ -36,7 +36,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full bg-[#02010a] font-sans text-white">
         <SpaceBackdrop />
-        <div className="vignette" />
         <SiteNav />
         {children}
       </body>

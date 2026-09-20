@@ -8,7 +8,7 @@ export function Contact() {
     >
       <div className="mx-auto w-full max-w-3xl">
         <p className="font-mono text-[11px] tracking-[0.32em] text-cyan-200/80">
-          05 / OPEN CHANNEL
+          04 / OPEN CHANNEL
         </p>
         <h2 className="mt-4 text-4xl font-medium tracking-tight text-white md:text-6xl">
           Send a signal.

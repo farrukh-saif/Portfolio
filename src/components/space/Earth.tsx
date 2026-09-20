@@ -6,6 +6,7 @@ import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { orbitAwayY } from "@/lib/flight";
 import { scrollState } from "@/lib/scroll-state";
+import { useSceneMode } from "./scene-mode";
 
 const earthVertex = /* glsl */ `
   varying vec2 vUv;
@@ -83,6 +84,7 @@ const atmosphereFragment = /* glsl */ `
 `;
 
 export function Earth() {
+  const mode = useSceneMode();
   const group = useRef<THREE.Group>(null);
   const cloudsRef = useRef<THREE.Mesh>(null);
   const materialRef = useRef<THREE.ShaderMaterial>(null);
@@ -110,7 +112,7 @@ export function Earth() {
   );
 
   useFrame((_, delta) => {
-    const t = scrollState.progress;
+    const t = mode === "full" ? scrollState.progress : 0;
     if (group.current) {
       group.current.rotation.y += delta * 0.035 + t * 0.0004;
       group.current.rotation.x = THREE.MathUtils.damp(

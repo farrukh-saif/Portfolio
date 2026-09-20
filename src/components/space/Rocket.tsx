@@ -5,6 +5,7 @@ import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { flightPath } from "@/lib/flight";
 import { scrollState } from "@/lib/scroll-state";
+import { useSceneMode } from "./scene-mode";
 
 function Flame({ strength }: { strength: MutableRefObject<number> }) {
   const flame = useRef<THREE.Mesh>(null);
@@ -50,6 +51,7 @@ function Flame({ strength }: { strength: MutableRefObject<number> }) {
 }
 
 export function Rocket() {
+  const mode = useSceneMode();
   const group = useRef<THREE.Group>(null);
   const light = useRef<THREE.PointLight>(null);
   const strength = useRef(0.2);
@@ -58,7 +60,7 @@ export function Rocket() {
 
   useFrame((_, delta) => {
     if (!group.current) return;
-    const t = scrollState.progress;
+    const t = mode === "full" ? scrollState.progress : 0;
     const pos = flightPath(t);
     nextPos.set(pos[0], pos[1], pos[2]);
     group.current.position.lerp(nextPos, 1 - Math.exp(-delta * 3.2));

@@ -53,3 +53,106 @@ body {
     radial-gradient(ellipse at center, transparent 18%, rgba(2, 1, 10, 0.28) 58%, rgba(2, 1, 10, 0.72) 100%),
     linear-gradient(to bottom, rgba(2, 1, 10, 0.42), transparent 22%, transparent 72%, rgba(2, 1, 10, 0.7));
 }
+
+.mdx {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.mdx > * + * {
+  margin-top: 1.15rem;
+}
+
+.mdx h1,
+.mdx h2,
+.mdx h3,
+.mdx h4 {
+  color: white;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.mdx h1 { font-size: 1.85rem; }
+.mdx h2 { font-size: 1.45rem; margin-top: 2.2rem; }
+.mdx h3 { font-size: 1.15rem; margin-top: 1.8rem; }
+
+.mdx a,
+.mdx .anchor {
+  color: #bfefff;
+  text-decoration: none;
+}
+
+.mdx a:hover,
+.mdx .anchor:hover {
+  color: white;
+}
+
+.mdx ul,
+.mdx ol {
+  padding-left: 1.25rem;
+}
+
+.mdx li + li {
+  margin-top: 0.35rem;
+}
+
+.mdx blockquote {
+  border-left: 2px solid rgba(92, 225, 255, 0.45);
+  padding-left: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mdx img,
+.mdx video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem auto;
+  border-radius: 0.75rem;
+}
+
+.mdx figure {
+  margin: 1.5rem 0;
+}
+
+.mdx hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 2rem 0;
+}
+
+.mdx pre {
+  overflow-x: auto;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1rem 1.1rem;
+  font-size: 0.88rem;
+}
+
+.mdx :not(pre) > code {
+  border-radius: 0.3rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.12rem 0.35rem;
+  font-size: 0.9em;
+}
+
+.mdx table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.mdx th,
+.mdx td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 0.4rem;
+  text-align: left;
+}
+
+.mdx .katex {
+  font-size: 1.05em;
+}

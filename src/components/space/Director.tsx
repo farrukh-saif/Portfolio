@@ -5,6 +5,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { flightPath, smoothstep } from "@/lib/flight";
 import { samplePath, scrollState, type Keyframe } from "@/lib/scroll-state";
+import { useSceneMode } from "./scene-mode";
 
 const HERO_CAM: Keyframe[] = [
   { t: 0, p: [3.2, 5.1, 12.4] },
@@ -22,6 +23,7 @@ const WIDE_EYE = new THREE.Vector3(0.2, 6.2, 19.5);
 const WIDE_LOOK = new THREE.Vector3(0, 2.4, -2);
 
 export function Director() {
+  const mode = useSceneMode();
   const { camera } = useThree();
   const smoothed = useRef(0);
   const targetPos = useMemo(() => new THREE.Vector3(), []);
@@ -35,11 +37,20 @@ export function Director() {
   useFrame((_, delta) => {
     smoothed.current = THREE.MathUtils.damp(
       smoothed.current,
-      scrollState.progress,
+      mode === "full" ? scrollState.progress : 0,
       2.6,
       delta,
     );
     const t = smoothed.current;
+
+    if (mode === "stars") {
+      targetPos.set(0, 0, 16);
+      targetLook.set(0, 0, 0);
+      camera.position.lerp(targetPos, 1 - Math.exp(-delta * 2.8));
+      currentLook.lerp(targetLook, 1 - Math.exp(-delta * 2.4));
+      camera.lookAt(currentLook);
+      return;
+    }
     const rocket = flightPath(t);
 
     const hp = samplePath(HERO_CAM, t);

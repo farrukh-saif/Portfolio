@@ -10,8 +10,9 @@ import { Rocket } from "./Rocket";
 import { Lasers } from "./Lasers";
 import { Starfield } from "./Starfield";
 import { bindScroll } from "@/lib/scroll-state";
+import { SceneModeContext, type SceneMode } from "./scene-mode";
 
-function Scene() {
+function Scene({ mode }: { mode: SceneMode }) {
   return (
     <>
       <color attach="background" args={["#02010a"]} />
@@ -28,25 +29,29 @@ function Scene() {
         color="#3d6cff"
       />
       <Starfield />
-      <Suspense fallback={null}>
-        <Earth />
-      </Suspense>
-      <Rocket />
-      <Lasers />
+      {mode !== "stars" ? (
+        <>
+          <Suspense fallback={null}>
+            <Earth />
+          </Suspense>
+          <Rocket />
+          {mode === "full" ? <Lasers /> : null}
+        </>
+      ) : null}
       <Director />
       <Preload all />
     </>
   );
 }
 
-export default function SpaceCanvas() {
-  const [ready, setReady] = useState(false);
+export default function SpaceCanvas({ mode }: { mode: SceneMode }) {
+  const [ready, setReady] = useState(mode !== "full");
 
   useEffect(() => bindScroll(), []);
 
   return (
-    <>
-      {!ready ? (
+    <SceneModeContext.Provider value={mode}>
+      {mode === "full" && !ready ? (
         <div className="pointer-events-none fixed inset-0 z-40 flex items-center justify-center bg-[#02010a] text-[#d7ecff]">
           <p className="font-mono text-[11px] tracking-[0.38em] text-cyan-200/80">
             ACQUIRING EARTH LOCK
@@ -68,12 +73,14 @@ export default function SpaceCanvas() {
             gl.toneMapping = THREE.NoToneMapping;
             gl.outputColorSpace = THREE.SRGBColorSpace;
             camera.lookAt(6.8, 2.7, 0);
-            window.setTimeout(() => setReady(true), 900);
+            if (mode === "full") {
+              window.setTimeout(() => setReady(true), 900);
+            }
           }}
         >
-          <Scene />
+          <Scene mode={mode} />
         </Canvas>
       </div>
-    </>
+    </SceneModeContext.Provider>
   );
 }

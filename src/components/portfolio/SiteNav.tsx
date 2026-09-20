@@ -12,7 +12,7 @@ export function SiteNav() {
     { href: onHome ? "#about" : "/#about", label: "About" },
     { href: onHome ? "#work" : "/#work", label: "Work" },
     { href: onHome ? "#stack" : "/#stack", label: "Stack" },
-    { href: onHome ? "#blog" : "/blog", label: "Blog" },
+    { href: "/blog", label: "Blog" },
   ];
 
   const contactHref = onHome ? "#contact" : "/#contact";
