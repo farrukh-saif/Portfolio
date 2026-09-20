@@ -13,12 +13,14 @@ export function Hero() {
           <BrandMark brand="uw" size="lg" />
         </div>
         <div className="mb-6 flex justify-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/portrait.jpg"
-            alt={site.name}
-            className="h-24 w-24 rounded-full object-cover object-center ring-1 ring-white/20 md:h-28 md:w-28"
-          />
+          <div className="h-24 w-24 overflow-hidden rounded-full bg-zinc-300 ring-1 ring-white/20 md:h-28 md:w-28">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/portrait.png"
+              alt={site.name}
+              className="h-full w-full object-cover object-center -translate-x-[3px]"
+            />
+          </div>
         </div>
         <p className="mb-5 font-mono text-[11px] tracking-[0.38em] text-cyan-200/80">
           HONEYWELL AEROSPACE / UW
