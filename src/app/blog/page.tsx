@@ -2,7 +2,7 @@ import Link from "next/link";
 import { formatDate, getBlogPosts } from "@/lib/posts";
 
 export const metadata = {
-  title: "Notes · Farrukh Saif",
+  title: "Notes",
   description: "Notes on building, AI, and whatever is on the bench.",
 };
 

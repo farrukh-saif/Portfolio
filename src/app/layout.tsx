@@ -15,7 +15,10 @@ const mono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Farrukh Saif · Space optics & imaging",
+  title: {
+    default: "Farrukh's Portfolio",
+    template: "%s · Farrukh's Portfolio",
+  },
   description:
     "Optical Engineering Specialist at Honeywell Aerospace and MASc researcher at UW, working on spaceborne optical systems, quantum communications, and biomedical imaging.",
   icons: {

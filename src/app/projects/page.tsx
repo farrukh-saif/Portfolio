@@ -2,7 +2,7 @@ import { ProjectGrid } from "@/components/projects/ProjectGrid";
 import { getProjects } from "@/lib/projects";
 
 export const metadata = {
-  title: "Projects · Farrukh Saif",
+  title: "Projects",
   description: "Selected builds: AI products, computer vision, robotics, and AR.",
 };
 
