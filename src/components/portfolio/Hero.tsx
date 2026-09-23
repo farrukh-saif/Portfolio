@@ -9,7 +9,6 @@ export function Hero() {
     >
       <div className="w-full max-w-3xl">
         <div className="mb-8 flex flex-wrap items-center justify-center gap-5">
-          <BrandMark brand="honeywell" size="lg" />
           <BrandMark brand="uw" size="lg" />
         </div>
         <div className="mb-6 flex justify-center">
@@ -23,7 +22,7 @@ export function Hero() {
           </div>
         </div>
         <p className="mb-5 font-mono text-[11px] tracking-[0.38em] text-cyan-200/80">
-          HONEYWELL AEROSPACE / UW
+          PHOTOMEDICINE LABS / UW
         </p>
         <h1 className="text-5xl font-medium tracking-tight text-white sm:text-6xl md:text-7xl">
           {site.name}

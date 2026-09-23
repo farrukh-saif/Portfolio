@@ -1,9 +1,9 @@
 export const site = {
   name: "Farrukh Saif",
   firstName: "Farrukh",
-  role: "Optical Engineering Specialist at Honeywell Aerospace",
+  role: "MASc researcher at the University of Waterloo",
   tagline:
-    "I assemble, align, and test spaceborne optical systems, and I still build biomedical imaging instruments at UW: photothermal microscopes, OCT, and the software that turns raw light into an image.",
+    "I build biomedical imaging instruments at UW: photothermal microscopes, OCT, and the software that turns raw light into an image.",
   location: "Waterloo, ON",
   email: "syedfarrukh.saif@uwaterloo.com",
   phone: "+1 382 889 4115",
@@ -14,11 +14,11 @@ export const site = {
     { label: "LinkedIn", href: "https://www.linkedin.com/in/farrukh-saif" },
   ],
   about: {
-    heading: "From the optical bench to orbit.",
-    lead: "Optical Engineering Specialist at Honeywell Aerospace in Cambridge, working on assembly, integration, alignment, and testing of spaceborne optical systems and satellite hardware, including quantum-encryption and quantum-communications payloads. In parallel I am a master’s researcher at UW developing optical imaging systems for biomedical applications.",
-    body: "Honeywell’s Cambridge space operations grew out of COM DEV’s space-hardware business. At PhotoMedicine Labs, supervised by Dr. Parsin Haji Reza, I built a photothermal laser scanning microscope from the ground up: lasers, scanners, relay optics, alignment, and the Python stack that acquires and forms the image. The through-line is the same: hardware, signal, and software as one system.",
+    heading: "From the optical bench to the image.",
+    lead: "Master’s researcher at the University of Waterloo, developing optical imaging systems for biomedical applications.",
+    body: "At PhotoMedicine Labs, supervised by Dr. Parsin Haji Reza, I built a photothermal laser scanning microscope from the ground up: lasers, scanners, relay optics, alignment, and the Python stack that acquires and forms the image. The through-line is the same: hardware, signal, and software as one system.",
     stats: [
-      { label: "Now", value: "Honeywell" },
+      { label: "Now", value: "UW" },
       { label: "Lab", value: "PhotoMedicine" },
       { label: "Degree", value: "MASc ’26" },
     ],
@@ -44,21 +44,6 @@ export const site = {
   experience: [
     {
       code: "01",
-      company: "Honeywell Aerospace",
-      role: "Optical Engineering Specialist",
-      when: "Sep. 2026 - Present",
-      where: "Cambridge, ON",
-      logo: "honeywell" as const,
-      tags: ["AIT", "Space optics", "Quantum comms", "Alignment"],
-      highlights: [
-        "Assembly, integration, alignment, and testing of spaceborne optical systems and satellite hardware.",
-        "Support for quantum-encryption and quantum-communications satellite technology.",
-        "Precision optical alignment, optomechanical integration, and aerospace hardware testing.",
-        "Part of Honeywell’s Cambridge space operations, originating from COM DEV’s space-hardware business.",
-      ],
-    },
-    {
-      code: "02",
       company: "PhotoMedicine Labs",
       role: "Researcher",
       when: "Nov. 2025 - Present",
@@ -73,7 +58,7 @@ export const site = {
       ],
     },
     {
-      code: "03",
+      code: "02",
       company: "EverPixel",
       role: "Full Stack Developer",
       when: "Mar. 2025 - Jun. 2025",
@@ -86,7 +71,7 @@ export const site = {
       ],
     },
     {
-      code: "04",
+      code: "03",
       company: "BrainSTEAM AR Education",
       role: "Full Stack AR Engineer",
       when: "May 2023 - Sep. 2024",
@@ -99,7 +84,7 @@ export const site = {
       ],
     },
     {
-      code: "05",
+      code: "04",
       company: "Ülkem A.Ş.",
       role: "Machine Learning Engineer",
       when: "Jun. 2023 - Jan. 2024",

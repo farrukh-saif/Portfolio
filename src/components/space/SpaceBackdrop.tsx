@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
+import { ShootingStars } from "./ShootingStars";
 import type { SceneMode } from "./scene-mode";
 
 const SpaceCanvas = dynamic(() => import("./SpaceCanvas"), {
@@ -22,6 +23,7 @@ export function SpaceBackdrop() {
     <>
       <SpaceCanvas mode={mode} />
       {mode === "full" ? <div className="vignette" /> : null}
+      <ShootingStars />
     </>
   );
 }
