@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SiteNav } from "@/components/portfolio/SiteNav";
 import { SpaceBackdrop } from "@/components/space/SpaceBackdrop";
 import "./globals.css";
@@ -41,6 +43,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SpaceBackdrop />
         <SiteNav />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
