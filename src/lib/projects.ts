@@ -12,6 +12,7 @@ export type Project = {
   tags: string[];
   order: number;
   featured: boolean;
+  fit: "cover" | "contain";
 };
 
 const PROJECTS_DIR = path.join(process.cwd(), "content/projects");
@@ -43,6 +44,7 @@ export function getProjects(): Project[] {
         tags: splitTags(metadata.tags),
         order: Number(metadata.order ?? 99),
         featured: metadata.featured !== "false",
+        fit: metadata.fit === "contain" ? "contain" : "cover",
       };
     })
     .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title));

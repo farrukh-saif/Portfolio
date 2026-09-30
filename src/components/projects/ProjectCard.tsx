@@ -52,11 +52,15 @@ export function ProjectCard({ project }: { project: Project }) {
         onClick={open}
         className="panel group w-full overflow-hidden text-left transition-colors hover:border-white/25"
       >
-        <div className="relative aspect-[4/3] overflow-hidden bg-black/50">
+        <div className="relative aspect-[4/3] overflow-hidden bg-black">
           <Preview
             src={project.image}
             title={project.title}
-            className="h-full w-full object-cover object-top opacity-85 brightness-[0.92] saturate-[0.8] transition-[transform,opacity,filter] duration-500 group-hover:scale-[1.03] group-hover:opacity-100 group-hover:brightness-100 group-hover:saturate-100"
+            className={
+              project.fit === "contain"
+                ? "h-full w-full object-contain opacity-90 transition-[opacity,filter] duration-500 group-hover:opacity-100 group-hover:brightness-105"
+                : "h-full w-full object-cover object-top opacity-85 brightness-[0.92] saturate-[0.8] transition-[transform,opacity,filter] duration-500 group-hover:scale-[1.03] group-hover:opacity-100 group-hover:brightness-100 group-hover:saturate-100"
+            }
           />
           <div className="pointer-events-none absolute inset-0 bg-[#02010a]/12 transition-opacity duration-500 group-hover:opacity-0" />
         </div>
