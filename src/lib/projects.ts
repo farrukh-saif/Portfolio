@@ -44,7 +44,7 @@ export function getProjects(): Project[] {
         tags: splitTags(metadata.tags),
         order: Number(metadata.order ?? 99),
         featured: metadata.featured !== "false",
-        fit: metadata.fit === "contain" ? "contain" : "cover",
+        fit: (metadata.fit === "contain" ? "contain" : "cover") as Project["fit"],
       };
     })
     .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title));
