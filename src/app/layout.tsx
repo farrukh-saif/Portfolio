@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s · Farrukh's Portfolio",
   },
   description:
-    "MASc researcher at the University of Waterloo, working on biomedical imaging, photothermal microscopes, OCT, and the software that turns raw light into an image.",
+    "Optical Engineering Specialist at Honeywell Aerospace and MASc researcher at UW, working on spaceborne optical systems, quantum communications, and biomedical imaging.",
   icons: {
     icon: [
       { url: "/favicon.ico" },

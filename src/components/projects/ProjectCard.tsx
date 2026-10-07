@@ -52,7 +52,7 @@ export function ProjectCard({ project }: { project: Project }) {
         onClick={open}
         className="panel group w-full overflow-hidden text-left transition-colors hover:border-white/25"
       >
-        <div className="relative aspect-[4/3] overflow-hidden bg-black">
+        <div className="relative isolate aspect-[4/3] overflow-hidden bg-[#02010a]">
           <Preview
             src={project.image}
             title={project.title}
@@ -62,7 +62,6 @@ export function ProjectCard({ project }: { project: Project }) {
                 : "h-full w-full object-cover object-top opacity-85 brightness-[0.92] saturate-[0.8] transition-[transform,opacity,filter] duration-500 group-hover:scale-[1.03] group-hover:opacity-100 group-hover:brightness-100 group-hover:saturate-100"
             }
           />
-          <div className="pointer-events-none absolute inset-0 bg-[#02010a]/12 transition-opacity duration-500 group-hover:opacity-0" />
         </div>
         <div className="p-5 md:p-6">
           <h3 className="text-xl font-medium text-white">{project.title}</h3>
@@ -118,7 +117,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <h3 className="mt-3 text-2xl font-medium tracking-tight text-white">
           {project.title}
         </h3>
-        <div className="mt-5 overflow-hidden rounded-xl border border-white/10 bg-black/40">
+        <div className="mt-5 overflow-hidden rounded-xl border border-white/10 bg-[#02010a]">
           <Preview
             src={project.image}
             title={project.title}
